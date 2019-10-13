@@ -1,0 +1,51 @@
+header.main-header
+  .container-fluid.px-0
+    nav.navbar.navbar-expand-lg.p-0.align-items-center
+      a.navbar-brand.px-3(href='#')
+        img(src="dist/images/logo.png" alt="")
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        i.fas.fa-bars
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link.px-0.active(href='#')
+              | Home 
+          li.nav-item
+            a.nav-link.px-0(href='#') Rising
+          li.nav-item
+            a.nav-link.px-0(href='#') Feed
+          li.nav-item
+            a.nav-link.px-0(href='#') Updates
+          li.nav-item
+            a.nav-link.px-0(href='#') Records      
+        form.form-inline.my-2.my-lg-0.d-block.d-lg-none.px-3.mb-4
+          input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+        .search-tigger.d-none.d-lg-block(data-toggle="modal" data-target="#exampleModal")
+          i.fas.fa-search
+        .notification.d-none.d-lg-block
+          i.fas.fa-bell
+          .number 2
+        ul.menu-author.navbar-nav
+          li.nav-item.dropdown.bg-pink.mr-0
+            a.dropdown-toggle.d-flex.align-items-center(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              img(src="dist/images/cre.png" alt="")
+              span David Richardson
+            .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='#') Profile
+              a.dropdown-item(href='#') Sign Out
+          li.nav-item.login.bg-pink.mr-0.d-none
+            a(href="#") login / register    
+
+
+
+
+
+
+#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content.search-form
+      form.d-flex(action="#")
+        input(type="text" placeholder="Search Here")
+        button.btn.button(type="submit") Search
+

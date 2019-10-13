@@ -3,4 +3,95 @@
 
 body {
   font-family: $f;
+  line-height: 1.2;
+}
+main {
+  background: $gray;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: em(14px);
+  color: $dgray;
+}
+
+.heading {
+  h2 {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-size: em(24px);
+    color: $dgray;
+  }
+}
+
+.space {
+  padding: 80px 0;
+}
+
+.bg {
+  &-white {
+    background: $white;
+  }
+  &-pink {
+    background: $pink;
+  }
+}
+
+.slick-arrow {
+  width: 25px;
+  height: 25px;
+  background: $pink;
+  color: $white;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  margin-top: -(25px/2);
+  &.right {
+    left: auto;
+    right: -12px;
+  }
+}
+
+.slick-slide img {
+  display: initial;
+}
+
+.tooltip-inner {
+  background: $pink;
+  font-weight: bold;
+  font-family: $h;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: $white;
+  border-radius: 0;
+}
+.tooltip {
+  .arrow {
+    &:before {
+      border-bottom-color: $pink;
+    }
+  }
+}
+
+.button {
+  background: $pink;
+  font-weight: 700;
+  color: #fff;
+  font-size: em(16px);
+  border-radius: 0;
+  min-width: 194px;
+  min-height: 45px;
+  transition: 0.3s;
+  &:hover {
+    background: #ef3e33;
+    color: #fff;
+  }
 }

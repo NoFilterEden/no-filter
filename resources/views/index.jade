@@ -2,7 +2,46 @@ extends layouts/app.jade
 
 block title
   title Home
-  
+
 block main
-  <i class="fas fa-ad"></i>
-  <i class="fal fa-angle-right"></i>
+  main
+    section.creators.space
+      .container
+        .row
+          .col-12.text-center
+            .heading
+              h2 newest creators
+              img(src="dist/images/heading.png" alt="")
+        .bg-white.position-relative(style="box-shadow: 0 0 10px rgba(223, 223, 223, 0.35);")        
+          .carosual.mx-auto
+            - for (var x = 1; x < 16; x++)
+              .item.text-center(data-toggle="tooltip" data-placement="bottom" title="david")
+                img(src="dist/images/cre.png" alt="")
+    section.video.space.pt-0
+      .container
+        .row
+          .col-12
+            .heading.text-center
+              h2 latest videos
+              img(src="dist/images/heading.png" alt="")     
+        .row.videos
+          - for (var x = 1; x < 7; x++)
+            .col-lg-4.col-md-6
+              .item.bg-white
+                a.img.position-relative.d-block(href="#")
+                  img.w-100(src="dist/images/video.png" alt="")
+                  i.fas.fa-play    
+                .text
+                  p Lorem Ipsum is simply dummy text of the fine printing and typesetting industry.
+                  .row.align-items-center
+                    .col-6
+                      .author
+                        img(src="dist/images/author.png" alt="")    
+                        a(href="#") David
+                    .col-6.text-right
+                      p.m-0 
+                        i.far.fa-eye.mr-1 
+                        | 1011     
+        div.mx-auto.mt-5(style="max-width: 194px;")
+          a.button.btn.text-uppercase.d-flex.align-items-center.justify-content-center(href="#") See more                  
+

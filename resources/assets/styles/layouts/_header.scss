@@ -1,0 +1,152 @@
+.navbar {
+  .nav-item {
+    margin: 0 15px;
+  }
+  .nav-link {
+    color: #454545;
+    // font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 38px 0;
+    border-top: 4px solid transparent;
+    &.active,
+    &:hover {
+      border-color: #ef3e33;
+    }
+  }
+}
+
+.search-tigger {
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  margin: 0 15px;
+  color: #454545;
+}
+
+.modal-dialog {
+  margin: 43vh auto;
+}
+
+.search-form {
+  form {
+    padding: 30px;
+    input {
+      width: 100%;
+      border: 1px solid $pink;
+      font-size: 14px;
+      padding: 5px 15px;
+    }
+    .button {
+      min-height: 30px;
+      min-width: 120px;
+    }
+  }
+}
+
+.notification {
+  width: 31px;
+  height: 31px;
+  background: $pink;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: $white;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 10px;
+  .number {
+    position: absolute;
+    top: -18px;
+    width: 18px;
+    height: 18px;
+    background-color: #363636;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    right: -6px;
+  }
+}
+
+.menu-author {
+  .nav-item {
+    padding: 18px 25px;
+    min-width: 250px;
+    min-height: 100px;
+  }
+  .dropdown-toggle {
+    color: #fff;
+    font-family: $h;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    white-space: unset;
+    text-decoration: none;
+    &:after {
+      font-weight: 400;
+      font-family: "Font Awesome 5 Pro";
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      content: "\f107";
+      border: none;
+      font-size: 20px;
+    }
+    img {
+      margin-right: 10px;
+    }
+    span {
+      max-width: 91px;
+      display: inline-block;
+    }
+  }
+  .dropdown-menu {
+    width: 100%;
+  }
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #ffffff;
+    }
+  }
+}
+
+// ======================= Mobile menu
+.navbar-toggler {
+  border-color: #000;
+  margin-right: 20px;
+  outline: 0 !important;
+}
+
+@include lg {
+  .main-header {
+    padding: 30px 0;
+  }
+  .navbar .nav-link {
+    padding: 10px 0;
+  }
+  .menu-author .nav-item {
+    margin: 0;
+    padding: 18px 17px;
+  }
+  .navbar-nav,
+  .dropdown-menu {
+    margin-top: 20px;
+  }
+}
+
+@include sm {
+  .navbar-brand {
+    width: 240px;
+  }
+}

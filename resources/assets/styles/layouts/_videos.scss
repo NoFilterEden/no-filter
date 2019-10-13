@@ -1,0 +1,40 @@
+.videos {
+  .item {
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(223, 223, 223, 0.35);
+    margin-bottom: 30px;
+    .img {
+      margin-bottom: 10px;
+      i {
+        position: absolute;
+        width: 63px;
+        height: 63px;
+        background: $pink;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 32px;
+        color: $white;
+        line-height: 63px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        margin-top: -(63px/2);
+      }
+    }
+    .author {
+      img {
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+      }
+      a {
+        font-size: 11px;
+        font-weight: bold;
+        color: #8c8c8c;
+        text-transform: uppercase;
+        margin-left: 8px;
+      }
+    }
+  }
+}
