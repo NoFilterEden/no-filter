@@ -12,6 +12,9 @@ main {
 img {
   max-width: 100%;
 }
+* {
+  outline: 0 !important;
+}
 
 p {
   font-size: em(14px);

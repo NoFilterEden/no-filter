@@ -3,6 +3,9 @@ header.main-header
     nav.navbar.navbar-expand-lg.p-0.align-items-center
       a.navbar-brand.px-3(href='#')
         img(src="dist/images/logo.png" alt="")
+      .notification.d-block.d-lg-none.ml-auto
+        i.fas.fa-bell  
+        .number 2
       button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
         i.fas.fa-bars
       #navbarSupportedContent.collapse.navbar-collapse
@@ -27,10 +30,11 @@ header.main-header
           i.fas.fa-bell
           .number 2
         ul.menu-author.navbar-nav
-          li.nav-item.dropdown.bg-pink.mr-0
-            a.dropdown-toggle.d-flex.align-items-center(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          li.nav-item.dropdown.bg-pink.mr-0.d-flex.flex-wrap.align-items-center
+            a(href="#")
               img(src="dist/images/cre.png" alt="")
-              span David Richardson
+            a.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              span.ml-2 David Richardson
             .dropdown-menu(aria-labelledby='navbarDropdown')
               a.dropdown-item(href='#') Profile
               a.dropdown-item(href='#') Sign Out
