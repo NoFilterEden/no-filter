@@ -114,7 +114,7 @@
   .nav-item {
     padding: 20px 25px;
     min-width: 250px;
-    min-height: 100px;
+    min-height: 103px;
     border: none;
   }
   .dropdown-toggle {
@@ -253,15 +253,13 @@
       }
     }
   }
-  .navbar .nav-item {
+  .navbar-nav.toggle-nav-bar .nav-item {
     border: none;
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
     align-items: center;
     padding: 0 10px;
-    .nav-link {
-    }
 
     &:after {
       content: "";
