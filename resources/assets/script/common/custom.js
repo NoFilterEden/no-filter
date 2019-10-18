@@ -42,3 +42,16 @@ $(".carosual").slick({
 $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+var newHeight = $(".main-wraper").width() - 280;
+// mobile menu slide from the left
+$('[data-toggle="slide-collapse"]').on("click", function() {
+  $navMenuCont = $($(this).data("target"));
+  $navMenuCont.animate({ width: "toggle" }, 350);
+  $(".main-wraper").toggleClass("active");
+});
+
+$(".search-tigger i").click(function() {
+  $(".search-tigger").toggleClass("active");
+  $(".toggle-nav-bar").toggleClass("active");
+});

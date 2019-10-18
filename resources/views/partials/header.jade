@@ -6,50 +6,44 @@ header.main-header
       .notification.d-block.d-lg-none.ml-auto
         i.fas.fa-bell  
         .number 2
-      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      button.navbar-toggler(type='button' data-toggle='slide-collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
         i.fas.fa-bars
       #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.ml-auto
-          li.nav-item
-            a.nav-link.px-0.active(href='#')
-              | Home 
-          li.nav-item
-            a.nav-link.px-0(href='#') Rising
-          li.nav-item
-            a.nav-link.px-0(href='#') Feed
-          li.nav-item
-            a.nav-link.px-0(href='#') Updates
-          li.nav-item
-            a.nav-link.px-0(href='#') Records      
-        form.form-inline.my-2.my-lg-0.d-block.d-lg-none.px-3.mb-4
-          input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
-          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
-        .search-tigger.d-none.d-lg-block(data-toggle="modal" data-target="#exampleModal")
-          i.fas.fa-search
-        .notification.d-none.d-lg-block
-          i.fas.fa-bell
-          .number 2
-        ul.menu-author.navbar-nav
-          li.nav-item.dropdown.bg-pink.mr-0.d-flex.flex-wrap.align-items-center
-            a(href="#")
-              img(src="dist/images/cre.png" alt="")
-            a.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              span.ml-2 David Richardson
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') Profile
-              a.dropdown-item(href='#') Sign Out
-          li.nav-item.login.bg-pink.mr-0.d-none
-            a(href="#") login / register    
+        .order-menu
+          ul.navbar-nav.ml-lg-auto.toggle-nav-bar
+            li.nav-item.active
+              a.nav-link.px-0(href='#')
+                | Home 
+            li.nav-item
+              a.nav-link.px-0(href='#') Rising
+            li.nav-item
+              a.nav-link.px-0(href='#') Feed
+                .number 2
+            li.nav-item.active
+              a.nav-link.px-0(href='#') Updates
+                .number 99+
+            li.nav-item
+              a.nav-link.px-0(href='#') Records      
+          form.form-inline.d-block.d-lg-none
+            input.form-control(type='search' placeholder='Search' aria-label='Search')
+          .search-tigger.d-none.d-lg-flex.align-items-center(data-toggle="modal" data-target="#exampleModal")
+            form.d-flex(action="#")
+              input(type="text" placeholder="Search Here")
+            i.fas.fa-search
+          .notification.d-none.d-lg-block
+            i.fas.fa-bell
+            .number 2
+          ul.menu-author.navbar-nav.order-1
+            li.nav-item.dropdown.bg-pink.mr-0.d-flex.flex-wrap.align-items-center
+              a(href="#")
+                img(src="dist/images/cre.png" alt="")
+              a.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                span.ml-2 David Richardson
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Profile
+                a.dropdown-item(href='#') Sign Out
+            li.nav-item.login.bg-pink.mr-0.d-none
+              a(href="#") login / register    
 
 
-
-
-
-
-#exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
-  .modal-dialog(role='document')
-    .modal-content.search-form
-      form.d-flex(action="#")
-        input(type="text" placeholder="Search Here")
-        button.btn.button(type="submit") Search
 

@@ -1,17 +1,36 @@
 .navbar {
   .nav-item {
     margin: 0 15px;
+    padding: 40px 0;
+    border-top: 4px solid transparent;
+    position: relative;
+    &.active,
+    &:hover {
+      border-color: #ef3e33;
+    }
   }
   .nav-link {
     color: #454545;
     // font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 38px 0;
-    border-top: 4px solid transparent;
-    &.active,
-    &:hover {
-      border-color: #ef3e33;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    .number {
+      position: absolute;
+      top: 0;
+      width: 22px;
+      height: 22px;
+      background-color: #363636;
+      color: #fff;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: bold;
+      line-height: 22px;
+      right: -20px;
+      top: -16px;
     }
   }
 }
@@ -22,6 +41,28 @@
   top: 3px;
   margin: 0 15px;
   color: #454545;
+  &.active {
+    form {
+      display: flex !important;
+    }
+  }
+  form {
+    display: none !important;
+    input {
+      border: none;
+      background: #ffe2e3;
+      color: #9c6363;
+      height: 50px;
+      padding: 0 24px;
+      width: 408px;
+      margin-right: 20px;
+    }
+  }
+}
+.toggle-nav-bar {
+  &.active {
+    display: none !important;
+  }
 }
 
 .modal-dialog {
@@ -71,9 +112,10 @@
 
 .menu-author {
   .nav-item {
-    padding: 18px 25px;
+    padding: 20px 25px;
     min-width: 250px;
     min-height: 100px;
+    border: none;
   }
   .dropdown-toggle {
     color: #fff;
@@ -123,9 +165,9 @@
 
 // ======================= Mobile menu
 .navbar-toggler {
-  border-color: #000;
   margin-right: 20px;
   outline: 0 !important;
+  color: #f8898d;
 }
 
 @include lg {
@@ -145,8 +187,132 @@
   }
 }
 
-@include sm {
+@include md {
   .navbar-brand {
     width: 194px;
+  }
+}
+
+// =============================== mobile menu
+
+.order-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+@include lg {
+  .main-wraper {
+    width: 100%;
+    transition: 0.4s;
+    &.active {
+      width: calc(100% - 300px);
+    }
+  }
+  #navbarSupportedContent {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 300px; /*example + never use min-width with this solution */
+    height: 100vh;
+    background: #fff;
+  }
+  .order-menu {
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      order: 3;
+      margin: 0;
+      width: 100%;
+      padding: 40px 0;
+    }
+    .form-inline {
+      order: 2;
+      width: 100%;
+      .form-control {
+        width: 100%;
+        display: block;
+        border: none;
+        background: #ffe2e3;
+        color: #9c6363;
+        height: 50px;
+        padding: 0 24px;
+        &:focus {
+          outline: 0 !important;
+        }
+      }
+    }
+    .menu-author {
+      order: 1;
+      padding: 0;
+
+      .nav-item {
+        padding: 15px 25px;
+      }
+    }
+  }
+  .navbar .nav-item {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    .nav-link {
+    }
+
+    &:after {
+      content: "";
+      border-bottom: 1px solid transparent;
+      display: block;
+      width: 100%;
+      margin-left: 14px;
+    }
+    &.active {
+      .nav-link {
+        color: #ef3e33;
+      }
+      &:after {
+        border-color: #ef3e33;
+      }
+    }
+  }
+  .menu-author .dropdown-toggle::after {
+    right: 25px;
+    position: absolute;
+    top: 40px;
+  }
+  .navbar .nav-link .number {
+    top: -5px;
+  }
+}
+
+@include md {
+  .navbar-collapse .menu-author .nav-item {
+    padding: 15px 10px;
+  }
+  .main-wraper {
+    &.active {
+      margin-left: -220px;
+      width: 100%;
+      overflow-y: hidden;
+      height: 100vh;
+    }
+  }
+  #navbarSupportedContent {
+    width: 220px;
+  }
+  .menu-author .nav-item {
+    min-width: auto;
+  }
+}
+
+@include sm {
+  .main-wraper {
+    &.active {
+      width: 100%;
+    }
   }
 }
