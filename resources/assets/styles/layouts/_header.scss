@@ -212,11 +212,28 @@
   }
 }
 @include lg {
+  .main-wraper {
+    transition: 0.35;
+    position: relative;
+
+    &.active {
+      overflow: hidden;
+      height: 100vh;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+      }
+    }
+  }
   #navbarSupportedContent {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 999;
     width: 300px; /*example + never use min-width with this solution */
     height: 100vh;
     background: #fff;
@@ -300,7 +317,7 @@
   }
 
   #navbarSupportedContent {
-    width: 220px;
+    width: 250px;
   }
   .menu-author .nav-item {
     min-width: 220px;
