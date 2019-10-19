@@ -1,7 +1,7 @@
 .navbar {
   .nav-item {
     margin: 0 15px;
-    padding: 40px 0;
+    padding: 41px 0;
     border-top: 4px solid transparent;
     position: relative;
     &.active,
@@ -114,7 +114,7 @@
   .nav-item {
     padding: 20px 25px;
     min-width: 250px;
-    min-height: 103px;
+    min-height: 105px;
     border: none;
   }
   .dropdown-toggle {
@@ -199,15 +199,19 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  position: relative;
+  .close {
+    width: 50px;
+    height: 49px;
+    background-color: #f8898d;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    right: 100%;
+    top: 0;
+  }
 }
 @include lg {
-  .main-wraper {
-    width: 100%;
-    transition: 0.4s;
-    &.active {
-      width: calc(100% - 300px);
-    }
-  }
   #navbarSupportedContent {
     position: fixed;
     top: 0;
@@ -294,26 +298,11 @@
   .navbar-collapse .menu-author .nav-item {
     padding: 15px 10px;
   }
-  .main-wraper {
-    &.active {
-      margin-left: -220px;
-      width: 100%;
-      overflow-y: hidden;
-      height: 100vh;
-    }
-  }
+
   #navbarSupportedContent {
     width: 220px;
   }
   .menu-author .nav-item {
     min-width: 220px;
-  }
-}
-
-@include sm {
-  .main-wraper {
-    &.active {
-      width: 100%;
-    }
   }
 }
