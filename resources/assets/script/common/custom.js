@@ -43,7 +43,6 @@ $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-var newHeight = $(".main-wraper").width() - 280;
 // mobile menu slide from the left
 $('[data-toggle="slide-collapse"]').on("click", function() {
   $navMenuCont = $($(this).data("target"));
@@ -55,3 +54,5 @@ $(".search-tigger i").click(function() {
   $(".search-tigger").toggleClass("active");
   $(".toggle-nav-bar").toggleClass("active");
 });
+
+tinymce.init({ selector: "textarea" });

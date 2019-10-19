@@ -34,6 +34,9 @@ p {
 
 .space {
   padding: 80px 0;
+  @include sm {
+    padding: 60px 0;
+  }
 }
 
 .bg {
@@ -96,5 +99,46 @@ p {
   &:hover {
     background: #ef3e33;
     color: #fff;
+  }
+}
+
+.aside-heading {
+  color: #6c6c6c;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  border-left: 5px solid #f8898d;
+  line-height: 1;
+  padding-left: 15px;
+  margin-bottom: 40px;
+  @include sm {
+    font-size: 20px;
+  }
+}
+
+.aside-menu {
+  box-shadow: 0 0 10px rgba(223, 223, 223, 0.35);
+  background: #fff;
+  padding: 25px;
+  li {
+    margin-bottom: 20px;
+    &.active {
+      &:after {
+        content: "";
+        border-bottom: 1px solid #ef3e33;
+        width: 100%;
+        display: block;
+        margin-left: 10px;
+      }
+      a {
+        color: #ef3e33;
+      }
+    }
+    a {
+      color: #454545;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
   }
 }
