@@ -1,6 +1,6 @@
-mixin sidebar()
+mixin sidebar(h)
   .col-lg-4.col-md-5.mb-md-0.mb-4
-    aside.h-100
+    aside.h-100(class=h)
       nav.aside-menu.h-100.b-shadow 
         ul.p-0.m-0.list-unstyled
           li.d-flex.align-items-center.active
@@ -8,10 +8,14 @@ mixin sidebar()
           li.d-flex.align-items-center
             a.text-nowrap(href="editor.html") Title & Description
           li.d-flex.align-items-center
-            a.text-nowrap(href="#") Thumbnail Setup
+            a.text-nowrap(href="thumbnail.html") Thumbnail Setup
           li.d-flex.align-items-center
             a.text-nowrap(href="#") Category & tags
           li.d-flex.align-items-center
-            a.text-nowrap(href="#") Advertisement
+            a.text-nowrap(href="ads.html") Advertisement
           li.d-flex.align-items-center
-            a.text-nowrap(href="#") Extras          
+            a.text-nowrap(href="#") Extras    
+
+
+
+

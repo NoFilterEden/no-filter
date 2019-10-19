@@ -68,7 +68,7 @@
           </div>
           <div class="row">
                   <div class="col-lg-4 col-md-5 mb-md-0 mb-4">
-                    <aside class="h-100">
+                    <aside class="h-100 h-auto">
                       <nav class="aside-menu h-100 b-shadow"> 
                         <ul class="p-0 m-0 list-unstyled">
                           <li class="d-flex align-items-center active"><a class="text-nowrap" href="video-upload.html">Upload video</a></li>
@@ -82,12 +82,24 @@
                     </aside>
                   </div>
             <div class="col-lg-8 col-md-7">
-              <div class="video-upload position-relative b-shadow"> 
+              <div class="video-upload position-relative">
                 <form action="#">
-                  <label class="d-flex flex-column justify-content-center align-items-center" for="upload">
-                    <input id="upload" type="file" name=""><i class="fas fa-cloud-upload-alt"></i>
-                    <p class="mb-0">Click here to upload</p>
-                  </label>
+                  <h3 class="aside-heading small">Auto generated</h3>
+                  <div class="radio mb-5">
+                    <label class="b-shadow" for="radio-1"> 
+                      <input id="radio-1" type="radio" name="gender" value="male" checked=""><img src="dist/images/radio-1.png" alt="">
+                    </label>
+                    <label class="b-shadow" for="radio-2">  
+                      <input id="radio-2" type="radio" name="gender" value="female"><img src="dist/images/radio-2.png" alt="">
+                    </label>
+                  </div>
+                  <h3 class="aside-heading small">Custom Thumbnail Upload [1280X720]    </h3>
+                  <div class="upload b-shadow"> 
+                    <label class="d-flex flex-column justify-content-center align-items-center" for="upload">
+                      <input id="upload" type="file" name=""><i class="fas fa-cloud-upload-alt"></i>
+                      <p class="mb-0">Click here to upload</p>
+                    </label>
+                  </div>
                 </form>
               </div>
               <div class="progress">

@@ -2,13 +2,15 @@
   box-shadow: 0 0 10px rgba(223, 223, 223, 0.35);
 }
 .video-upload {
-  background: #fff;
-  padding: 13px;
   form {
-    border: 5px dashed #e7e7e7;
-    label {
-      min-height: 259px;
-      cursor: pointer;
+    .upload {
+      background: #fff;
+      padding: 13px;
+      label {
+        min-height: 259px;
+        cursor: pointer;
+        border: 5px dashed #e7e7e7;
+      }
     }
   }
   i {
@@ -24,6 +26,20 @@
   input {
     position: absolute;
     opacity: 0;
+  }
+}
+.radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  input:checked + img {
+    border-color: #f8898d;
+    transition: 0.3s;
+  }
+  img {
+    width: 100%;
+    border: 5px solid #fff;
   }
 }
 
