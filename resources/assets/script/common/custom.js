@@ -55,4 +55,7 @@ $(".search-tigger i").click(function() {
   $(".toggle-nav-bar").toggleClass("active");
 });
 
-tinymce.init({ selector: "textarea" });
+tinymce.init({
+  selector: ".tinyMCE",
+  height: 280
+});
