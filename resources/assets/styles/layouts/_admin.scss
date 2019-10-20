@@ -8,8 +8,8 @@
       padding: 13px;
       label {
         min-height: 259px;
-        cursor: pointer;
         border: 5px dashed #e7e7e7;
+        cursor: pointer;
       }
     }
   }
@@ -93,5 +93,84 @@
   }
   .tox .tox-edit-area__iframe {
     padding-bottom: 10px;
+  }
+}
+
+// ================================ tags
+.bootstrap-tagsinput {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 10px rgba(223, 223, 223, 0.35);
+  display: flex;
+  padding: 12px 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  @include lg {
+    // flex-flow: row wrap;
+  }
+  .tag {
+    color: #6c6c6c;
+  }
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 2px;
+  margin-right: 5px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]::after {
+  font-weight: 400;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f057";
+}
+
+// ====================================== check-box
+.check-box {
+  margin-top: 20px;
+  label {
+    margin-bottom: 14px;
+  }
+  .box {
+    input:checked + .checkmark {
+      &:before {
+        content: "\f00c";
+      }
+    }
+    .checkmark {
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff;
+      margin-right: 13px;
+      &:before {
+        font-weight: 900;
+        font-family: "Font Awesome 5 Pro";
+        font-size: 12px;
+      }
+    }
+  }
+  span {
+    color: #454545;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+.bootstrap-select {
+  .dropdown-toggle {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(223, 223, 223, 0.35);
+    padding: 9px 18px;
+    &:after {
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 900;
+      content: "\f107";
+      border: none;
+    }
+  }
+  &.show {
+    .dropdown-toggle {
+      &:after {
+        content: "\f106";
+      }
+    }
   }
 }

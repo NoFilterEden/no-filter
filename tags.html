@@ -8,7 +8,7 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <title>Video Upload</title>
+    <title>Category & tags</title>
     <!-- Bootstrap-->
     <!--link(href='dist/fonts/fontawesome/css/all.css' rel='stylesheet')-->
     <link href="dist/styles/style.css" rel="stylesheet">
@@ -82,20 +82,15 @@
                     </aside>
                   </div>
             <div class="col-lg-8 col-md-7">
-              <div class="video-upload position-relative b-shadow"> 
+              <div class="tags">
                 <form action="#">
-                  <div class="upload">
-                    <label class="d-flex flex-column justify-content-center align-items-center" for="upload">
-                      <input id="upload" type="file" name=""><i class="fas fa-cloud-upload-alt"></i>
-                      <p class="mb-0">Click here to upload</p>
-                    </label>
-                  </div>
+                  <h3 class="aside-heading small">Select Video categories</h3>
+                  <input type="text" value="Amsterdam,Washington" data-role="tagsinput">
+                  <h3 class="aside-heading small mt-5">Select Video tags</h3>
+                  <input type="text" value="" data-role="tagsinput">
                 </form>
               </div>
-              <div class="progress">
-                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="navigation"><a class="text-decoration-none" href="#">Prev</a><a class="text-decoration-none" href="#">NEXT</a></div>
+              <div class="navigation"><a class="text-decoration-none" href="#">Prev</a><a class="text-decoration-none" href="#">NEXT   </a></div>
             </div>
           </div>
         </div>

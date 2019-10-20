@@ -1,9 +1,10 @@
 @import "components/bootstrap/scss/bootstrap";
 @import "components/slick";
+@import "components/_bootstrap-select";
+@import "components/_bootstrap-tagsinput";
+
 @import "common/_variables";
-
 @import "common/_fontawesome";
-
 @import "common/_global";
 
 @import "layouts/_header";

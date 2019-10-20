@@ -1,0 +1,24 @@
+extends layouts/app.jade
+
+block title
+  title Category & tags
+
+block main
+  main.space
+    .container
+      .row
+        .col-12
+          h3.aside-heading Video upload Panel
+      .row
+        +sidebar()
+        .col-lg-8.col-md-7
+          .tags
+            form(action="#")
+              h3.aside-heading.small Select Video categories
+              input(type='text' value='Amsterdam,Washington' data-role='tagsinput')
+              h3.aside-heading.small.mt-5 Select Video tags
+              input(type='text' value='' data-role='tagsinput')
+          .navigation
+            a.text-decoration-none(href="#") Prev
+            a.text-decoration-none(href="#") NEXT   
+
