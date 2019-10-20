@@ -15,9 +15,14 @@ block main
           .tags
             form(action="#")
               h3.aside-heading.small Select Video categories
-              input(type='text' value='Amsterdam,Washington' data-role='tagsinput')
+              select.chosen-select(data-placeholder='Select Video categories' tabindex='7' multiple)
+                option American Black Bear
+                option Asiatic Black Bear
+                option Brown Bear
+                option Giant Panda
+                option(selected='') Sloth Bear
               h3.aside-heading.small.mt-5 Select Video tags
-              input(type='text' value='' data-role='tagsinput')
+              input(type='text' value='Amsterdam,Washington' data-role='tagsinput')
           .navigation
             a.text-decoration-none(href="#") Prev
             a.text-decoration-none(href="#") NEXT   

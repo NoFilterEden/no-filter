@@ -59,3 +59,5 @@ tinymce.init({
   selector: ".tinyMCE",
   height: 280
 });
+
+$(".chosen-select").chosen({ disable_search_threshold: 10 });
