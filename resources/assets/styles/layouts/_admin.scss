@@ -75,13 +75,16 @@
   form {
     input {
       width: 100%;
-      color: #cccccc;
+      color: #6c6c6c;
       font-weight: 700;
       background-color: #ffffff;
       height: 45px;
       border: none;
       padding: 5px 15px;
       margin-bottom: 30px;
+      &::placeholder {
+        color: #cccccc;
+      }
     }
   }
   .tox-tinymce {
