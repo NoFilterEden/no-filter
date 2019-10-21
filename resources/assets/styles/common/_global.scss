@@ -6,7 +6,8 @@ body {
   line-height: 1.2;
 }
 main {
-  background: $gray;
+  background: url(../images/full-bloom.png) repeat;
+  background-attachment: fixed;
 }
 
 img {
