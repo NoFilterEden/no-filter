@@ -1,3 +1,4 @@
+// ========================= main menu deskop
 .navbar {
   .nav-item {
     margin: 0 15px;
@@ -35,6 +36,8 @@
   }
 }
 
+// ========================= overlap search
+
 .search-tigger {
   cursor: pointer;
   position: relative;
@@ -65,10 +68,6 @@
   }
 }
 
-.modal-dialog {
-  margin: 43vh auto;
-}
-
 .search-form {
   form {
     padding: 30px;
@@ -84,6 +83,8 @@
     }
   }
 }
+
+// ========================= header notification
 
 .notification {
   width: 31px;
@@ -110,12 +111,20 @@
   }
 }
 
+// ========================= menu author
+
 .menu-author {
   .nav-item {
     padding: 20px 25px;
     min-width: 250px;
     min-height: 105px;
     border: none;
+    @include lg {
+      padding: 25px 0 0 0;
+      .profile-pic {
+        margin-left: 25px;
+      }
+    }
   }
   .dropdown-toggle {
     color: #fff;
@@ -149,6 +158,26 @@
   }
   .dropdown-menu {
     width: 100%;
+    border-radius: 0;
+    margin: 0;
+    @include lg {
+      display: block;
+      margin-top: 20px;
+      padding-top: 0;
+    }
+    .dropdown-item {
+      margin-bottom: 6px;
+      &:hover,
+      &.active {
+        background-color: transparent;
+        color: #ef3e33;
+      }
+    }
+    i {
+      width: 20px;
+      margin-right: 6px;
+      text-align: center;
+    }
   }
   .login {
     display: flex;
@@ -179,7 +208,6 @@
   }
   .menu-author .nav-item {
     margin: 0;
-    padding: 18px 17px;
   }
   .navbar-nav,
   .dropdown-menu {
@@ -247,7 +275,7 @@
       order: 3;
       margin: 0;
       width: 100%;
-      padding: 40px 0;
+      padding: 5px 0;
     }
     .form-inline {
       order: 2;
@@ -268,10 +296,6 @@
     .menu-author {
       order: 1;
       padding: 0;
-
-      .nav-item {
-        padding: 15px 25px;
-      }
     }
   }
   .navbar-nav.toggle-nav-bar .nav-item {
@@ -302,6 +326,7 @@
     right: 25px;
     position: absolute;
     top: 40px;
+    display: none;
   }
   .navbar .nav-link .number {
     top: -5px;
@@ -312,10 +337,6 @@
 }
 
 @include md {
-  .navbar-collapse .menu-author .nav-item {
-    padding: 15px 10px;
-  }
-
   #navbarSupportedContent {
     width: 250px;
   }
