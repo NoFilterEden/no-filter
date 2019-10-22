@@ -248,15 +248,21 @@
       overflow: hidden;
       height: 100vh;
       &::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 100;
       }
     }
   }
+  .overlay-full {
+    &.active {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      top: 0;
+    }
+  }
+
   #navbarSupportedContent {
     position: fixed;
     top: 0;
