@@ -209,9 +209,11 @@
   .menu-author .nav-item {
     margin: 0;
   }
-  .navbar-nav,
-  .dropdown-menu {
-    margin-top: 20px;
+  .main-header {
+    .navbar-nav,
+    .dropdown-menu {
+      margin-top: 20px;
+    }
   }
 }
 
