@@ -21,7 +21,8 @@ html(lang='en')
   body(class=bodyClass)
     .main-wraper.d-block
       include ../partials/functions.jade
-      include ../partials/header.jade
+      block header
+        include ../partials/header.jade
       block main
       include ../partials/footer.jade
     .overlay-full(type='button' data-toggle='slide-collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')

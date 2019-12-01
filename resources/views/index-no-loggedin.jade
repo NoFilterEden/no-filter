@@ -3,6 +3,9 @@ extends layouts/app.jade
 block title
   title Home
 
+block header
+  include partials/header-no-login.jade
+
 block main
   main
     section.creators.space
@@ -43,6 +46,6 @@ block main
                       p.m-0 
                         i.far.fa-eye.mr-1 
                         | 1011     
-        div.mx-auto.mt-5(style="max-width: 194px;")
+        .mx-auto.mt-5(style="max-width: 194px;")
           a.button.btn.text-uppercase.d-flex.align-items-center.justify-content-center(href="#") See more                  
 
