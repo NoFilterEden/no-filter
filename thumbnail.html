@@ -21,10 +21,22 @@
       <header class="main-header bg-white">
         <div class="container-fluid px-0">
           <nav class="navbar navbar-expand-lg p-0 align-items-center"><a class="navbar-brand px-3" href="index.html"><img src="dist/images/logo.png" alt=""></a>
+            <div class="dropdown search-tigger d-flex d-lg-none align-items-center mobile-serach-tigger justify-content-end">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form class="d-flex" action="#">
+                  <input type="text" placeholder="Search Here">
+                </form>
+              </div>
+              <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search">  </i></button>
+            </div>
             <div class="notification d-block d-lg-none ml-auto"><i class="fas fa-bell"> </i>
               <div class="number">2</div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="bar1 bar"></div>
+              <div class="bar2 bar"></div>
+              <div class="bar3 bar"></div>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="order-menu">
                 <button class="close d-lg-none d-flex align-items-center justify-content-center" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-times"></i></button>
@@ -37,23 +49,22 @@
                       <div class="number">99+</div></a></li>
                   <li class="nav-item"><a class="nav-link px-0" href="#">Records      </a></li>
                 </ul>
-                <div class="search-tigger d-none d-lg-flex align-items-center" data-toggle="modal" data-target="#exampleModal">
-                  <form class="d-flex" action="#">
-                    <input type="text" placeholder="Search Here">
-                  </form><i class="fas fa-search"></i>
+                <div class="dropdown search-tigger d-none d-lg-flex align-items-center">
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <form class="d-flex" action="#">
+                      <input type="text" placeholder="Search Here">
+                    </form>
+                  </div>
                 </div>
+                <button class="d-none d-lg-block" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"> </i></button>
                 <div class="notification d-none d-lg-block"><i class="fas fa-bell"></i>
                   <div class="number">2</div>
                 </div>
                 <ul class="menu-author navbar-nav order-1">
                   <li class="nav-item dropdown bg-pink mr-0 d-flex flex-wrap align-items-center"><a class="profile-pic" href="#"><img src="dist/images/cre.png" alt=""></a><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="ml-2">David Richardson</span></a>
-                    <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
-                      <form class="form-inline d-block d-lg-none dropdown-item px-0 pt-0">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                      </form><a class="dropdown-item active" href="#"><i class="far fa-user"></i>Profile</a><a class="dropdown-item" href="#"> <i class="fas fa-upload"></i>Upload</a><a class="dropdown-item" href="#"> <i class="fas fa-star"></i>Channels</a><a class="dropdown-item" href="#"> <i class="fas fa-dollar-sign"></i>Earnings</a><a class="dropdown-item" href="#"> <i class="fas fa-chart-pie"></i>Statistics</a><a class="dropdown-item" href="#"> <i class="fas fa-cog"></i>Settings</a><a class="dropdown-item" href="#"> <i class="fas fa-power-off"></i>Sign Out</a>
-                    </div>
+                    <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown"><a class="dropdown-item active" href="#"><i class="far fa-user"></i>Profile</a><a class="dropdown-item" href="#"> <i class="fas fa-upload"></i>Upload</a><a class="dropdown-item" href="#"> <i class="fas fa-star"></i>Channels</a><a class="dropdown-item" href="#"> <i class="fas fa-dollar-sign"></i>Earnings</a><a class="dropdown-item" href="#"> <i class="fas fa-chart-pie"></i>Statistics</a><a class="dropdown-item" href="#"> <i class="fas fa-cog"></i>Settings</a><a class="dropdown-item" href="#">
+                         <i class="fas fa-sign-out-alt"></i>Sign Out</a></div>
                   </li>
-                  <li class="nav-item login bg-pink mr-0 d-none justify-content-center"><a class="text-nowrap" href="#">login / register</a></li>
                 </ul>
               </div>
             </div>

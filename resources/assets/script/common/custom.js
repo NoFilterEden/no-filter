@@ -51,10 +51,10 @@ $('[data-toggle="slide-collapse"]').on("click", function() {
   $(".overlay-full").toggleClass("active");
 });
 
-$(".search-tigger i").click(function() {
-  $(".search-tigger").toggleClass("active");
-  $(".toggle-nav-bar").toggleClass("active");
-});
+// $(".search-tigger i").click(function() {
+//   $(".search-tigger").toggleClass("active");
+//   $(".toggle-nav-bar").toggleClass("active");
+// });
 
 tinymce.init({
   selector: ".tinyMCE",

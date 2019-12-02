@@ -3,11 +3,19 @@ header.main-header.bg-white
     nav.navbar.navbar-expand-lg.p-0.align-items-center
       a.navbar-brand.px-3(href='index.html')
         img(src="dist/images/logo.png" alt="")
+      .dropdown.search-tigger.d-flex.d-lg-none.align-items-center.mobile-serach-tigger.justify-content-end
+        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+          form.d-flex(action="#")
+            input(type="text" placeholder="Search Here")
+        button#dropdownMenuButton(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          i.fas.fa-search   
       .notification.d-block.d-lg-none.ml-auto
         i.fas.fa-bell  
         .number 2
       button.navbar-toggler(type='button' data-toggle='slide-collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-        i.fas.fa-bars
+        .bar1.bar
+        .bar2.bar
+        .bar3.bar
       #navbarSupportedContent.collapse.navbar-collapse
         .order-menu
           button.close.d-lg-none.d-flex.align-items-center.justify-content-center(type='button' data-toggle='slide-collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
@@ -26,10 +34,12 @@ header.main-header.bg-white
                 .number 99+
             li.nav-item
               a.nav-link.px-0(href='#') Records      
-          .search-tigger.d-none.d-lg-flex.align-items-center(data-toggle="modal" data-target="#exampleModal")
-            form.d-flex(action="#")
-              input(type="text" placeholder="Search Here")
-            i.fas.fa-search
+          .dropdown.search-tigger.d-none.d-lg-flex.align-items-center
+            .dropdown-menu(aria-labelledby='dropdownMenuButton')
+              form.d-flex(action="#")
+                input(type="text" placeholder="Search Here")
+          button#dropdownMenuButton.d-none.d-lg-block(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            i.fas.fa-search 
           .notification.d-none.d-lg-block
             i.fas.fa-bell
             .number 2
@@ -40,8 +50,6 @@ header.main-header.bg-white
               a.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                 span.ml-2 David Richardson
               .dropdown-menu.border-0(aria-labelledby='navbarDropdown')
-                form.form-inline.d-block.d-lg-none.dropdown-item.px-0.pt-0
-                  input.form-control(type='search' placeholder='Search' aria-label='Search')
                 a.dropdown-item.active(href='#')
                   i.far.fa-user
                   | Profile
@@ -61,10 +69,8 @@ header.main-header.bg-white
                   i.fas.fa-cog
                   | Settings
                 a.dropdown-item(href='#') 
-                  i.fas.fa-power-off
+                  <i class="fas fa-sign-out-alt"></i>
                   | Sign Out
-            li.nav-item.login.bg-pink.mr-0.d-none.justify-content-center
-              a.text-nowrap(href="#") login / register
 
 
 

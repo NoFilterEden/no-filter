@@ -37,21 +37,46 @@
 }
 
 // ========================= overlap search
+.order-menu {
+  button {
+    border: none;
+    background: none;
+    position: relative;
+    top: 3px;
+  }
+  &.show {
+    .toggle-nav-bar {
+      display: none !important;
+    }
+  }
+}
 
 .search-tigger {
   cursor: pointer;
   position: relative;
   top: 3px;
-  margin: 0 15px;
   color: #454545;
-  &.active {
+  .dropdown-menu {
+    position: static;
+    float: none;
+    min-width: auto;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    display: block;
+    z-index: 1;
+  }
+
+  .show {
     form {
       input {
         width: 408px;
         padding: 0 24px;
         visibility: visible;
         transition: 0.3s;
-        margin-right: 20px;
+        margin-right: 10px;
       }
     }
   }
@@ -64,11 +89,6 @@
       width: 0;
       visibility: hidden;
     }
-  }
-}
-.toggle-nav-bar {
-  &.active {
-    display: none !important;
   }
 }
 
@@ -101,6 +121,14 @@
   position: relative;
   margin-right: 15px;
   margin-left: 10px;
+  @include lg {
+    margin-right: 32px;
+    z-index: 12;
+  }
+  @include rwd(350) {
+    position: absolute;
+    right: 75px;
+  }
   .number {
     position: absolute;
     top: -18px;
@@ -113,6 +141,9 @@
     line-height: 18px;
     right: -6px;
   }
+}
+.mobile-serach-tigger.show + .notification {
+  display: none !important;
 }
 
 // ========================= menu author
@@ -170,7 +201,7 @@
       padding-top: 0;
     }
     .dropdown-item {
-      margin-bottom: 6px;
+      margin: 15px 0;
       &:hover,
       &.active {
         background-color: transparent;
@@ -384,12 +415,20 @@
   right: 70px;
   top: 2px;
   height: 50px;
-  width: calc(100% - 100px);
-  &.active {
+  width: calc(100% - 85px);
+  button {
+    border: none;
+    background: none;
+  }
+  &.show {
     z-index: 11;
   }
   @include md {
     top: -6px;
+  }
+  .dropdown-menu {
+    width: 100%;
+    margin-top: 0;
   }
   form {
     opacity: 0;
@@ -402,7 +441,7 @@
     }
   }
 
-  &.active {
+  &.show {
     form {
       opacity: 1;
       visibility: visible;
