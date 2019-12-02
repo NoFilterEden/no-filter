@@ -9,9 +9,9 @@ block main
       .container
         .row
           .col-12.text-center
-            .heading
+            .heading.mb-4
               h2 newest creators
-              img(src="dist/images/heading.png" alt="")
+              img(src="dist/images/crown.png" alt="" style="width: 30px;")
         .bg-white.position-relative(style="box-shadow: 0 0 10px rgba(223, 223, 223, 0.35);")        
           .carosual.mx-auto
             - for (var x = 1; x < 16; x++)
@@ -21,9 +21,9 @@ block main
       .container
         .row
           .col-12
-            .heading.text-center
+            .heading.text-center.mb-4
               h2 latest videos
-              img(src="dist/images/heading.png" alt="")     
+              img(src="dist/images/favourites.png" alt="" style="width: 30px;")     
         .row.videos
           - for (var x = 1; x < 7; x++)
             .col-lg-4.col-md-6
@@ -43,6 +43,6 @@ block main
                       p.m-0 
                         i.far.fa-eye.mr-1 
                         | 1011     
-        div.mx-auto.mt-5(style="max-width: 194px;")
+        .mx-auto.mt-5(style="max-width: 194px;")
           a.button.btn.text-uppercase.d-flex.align-items-center.justify-content-center(href="#") See more                  
 
