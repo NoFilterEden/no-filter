@@ -458,3 +458,24 @@
     min-width: 170px;
   }
 }
+
+/* style.css | http://localhost:7882/dist/styles/style.css?cache-bust=0.00683491764637667 */
+
+@media (max-width: 991px) {
+  .logged-in .notification {
+    /* margin-right: 32px; */
+    margin-right: 0;
+  }
+}
+
+.logged-in .search-tigger.mobile-serach-tigger {
+  /* right: 70px; */
+  /* width: calc(100% - 85px); */
+  right: 113px;
+  width: calc(100% - 128px);
+}
+
+.logged-in .mobile-serach-tigger.show + .notification {
+  /* display: none !important; */
+  display: block !important;
+}
