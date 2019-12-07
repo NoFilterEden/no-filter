@@ -49,6 +49,10 @@
     }
   }
   @include lg {
+    .menu-author .nav-item,
+    .order-menu .close {
+      background-color: #ef3e33;
+    }
     .search-tigger.mobile-serach-tigger {
       top: -2px;
     }
