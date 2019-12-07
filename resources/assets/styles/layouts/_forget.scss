@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+// ================================= forget-password
+.forget-password {
+  background: none;
+  &:before {
+    content: "";
+    background: url(../images/form-bg.png) no-repeat;
+    width: 100%;
+    position: absolute;
+    height: em(768px);
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    z-index: -1;
+    @include rwd(1620) {
+      font-size: 10px;
+    }
+  }
+  @media (min-width: 992px) {
+    .main-header {
+      padding: 30px 0;
+    }
+    .navbar .nav-link {
+      color: #ffffff;
+    }
+    .order-menu button {
+      top: 1px;
+      color: #fff;
+    }
+    .navbar .nav-item {
+      padding: 0;
+    }
+    .menu-author .nav-item {
+      min-height: auto;
+      border: 1px solid #ffffff;
+      background: none;
+      padding: 15px 20px;
+      @include lg {
+        min-height: 105px;
+      }
+    }
+  }
+  @include lg {
+    .search-tigger.mobile-serach-tigger {
+      top: -2px;
+    }
+    .search-tigger.mobile-serach-tigger button {
+      color: #fff;
+    }
+    .navbar-toggler .bar {
+      background: #fff;
+    }
+  }
+  @include md {
+    .search-tigger.mobile-serach-tigger {
+      top: -4px;
+    }
+  }
+}
+// ======================== forget-password form
+.forget-password-form {
+  margin: em(170px) 0;
+  background: #fff;
+  max-width: em(905px);
+  padding: em(50px) em(60px);
+  box-shadow: 10px 17px 81px rgba(25, 25, 25, 0.17);
+  font-family: $r;
+  @include rwd(1620) {
+    font-size: 10px;
+  }
+  @include sm {
+    padding: 2.5em 2em;
+    margin: 5.625em 0;
+  }
+  h2 {
+    margin: 0;
+    font-size: em(48px);
+    font-weight: 500;
+    color: #000000;
+  }
+  p {
+    font-size: em(21px);
+    color: #424242;
+    font-weight: 500;
+  }
+  a {
+    color: #2a62ff;
+    text-decoration: underline;
+  }
+  .big {
+    font-size: em(30px);
+    color: #343333;
+  }
+  .medium {
+    font-size: em(24px);
+  }
+  .code-step {
+    background-color: #ef3e33;
+    height: 1px;
+    margin: 0 em(50px);
+    margin-bottom: em(100px);
+    margin-top: em(50px);
+    .dot {
+      background-color: #ef3e33;
+      height: em(30px);
+      width: em(30px);
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: em(-15px);
+    }
+    .step {
+      position: absolute;
+      top: calc-em(30, 18);
+      left: calc-em(-24, 18);
+      font-size: em(18px);
+      color: #595a61;
+    }
+    .step-2-dot {
+      left: auto;
+      right: 0;
+    }
+    .step-1 {
+    }
+    .step-2 {
+      left: auto;
+      right: calc-em(-24, 18);
+    }
+  }
+  form {
+    input {
+      height: calc-em(92, 24);
+      border: 1px solid #c7c7c7;
+      background-color: #fbfbfb;
+      width: 100%;
+      font-size: em(24px);
+      color: #4c4c4c;
+      padding: 0 calc-em(55, 24);
+      font-weight: 500;
+    }
+    button {
+      font-size: em(24px);
+      font-weight: 500;
+      color: #ffffff;
+      background-color: #ef3e33;
+      height: calc-em(91, 24);
+      width: 100%;
+      border: none;
+      margin-top: calc-em(35, 24);
+      transition: 0.3s;
+      &:hover {
+        background: $pink;
+      }
+    }
+  }
+}

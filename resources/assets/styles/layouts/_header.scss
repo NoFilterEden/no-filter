@@ -456,6 +456,9 @@
 .no-login {
   .menu-author .nav-item {
     min-width: 170px;
+    @include lg {
+      padding-top: 0;
+    }
   }
 }
 

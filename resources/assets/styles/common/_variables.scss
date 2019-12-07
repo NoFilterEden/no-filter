@@ -1,6 +1,7 @@
 :root {
   --Sans: "Open Sans", sans-serif;
   --Helvetica: "Helvetica";
+  --Roboto: "Roboto";
   --pink: #f8898d;
   --gray: #f8f8f8;
   --dark-gray: #6c6c6c;
@@ -16,6 +17,7 @@ $white: var(--white);
 // ================= fonts
 $f: var(--Sans);
 $h: var(--Helvetica);
+$r: var(--Roboto);
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-max: 575px;

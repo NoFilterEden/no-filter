@@ -7,7 +7,21 @@ body {
   background: url(../images/full-bloom.png) repeat;
   background-attachment: fixed;
 }
-
+// ==================== sticky footer
+@media (min-width: 1366px) {
+  .main-wraper {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+  }
+  .main-header {
+    margin-bottom: auto;
+  }
+  .main-footer {
+    margin-top: auto;
+  }
+}
+// ==================
 img {
   max-width: 100%;
 }
