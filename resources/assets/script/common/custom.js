@@ -70,10 +70,3 @@ $(".description-arrow").click(function() {
 $(".__up,.__down").click(function() {
   $(this).toggleClass("active");
 });
-$(".__up").click(function() {
-  $(".__down").removeClass("active");
-});
-
-$(".__down").click(function() {
-  $(".__up").removeClass("active");
-});
