@@ -223,6 +223,7 @@
           color: #ffffff;
           padding: 5px 30px;
           margin-top: 10px;
+          border: none;
         }
         .img {
           img {
@@ -244,18 +245,18 @@
             font-size: em(14px);
           }
         }
-        button {
+        .commnet-button {
           background: none;
           border: none;
           color: #b8b8b8;
+          padding: 0 8px;
+          cursor: pointer;
+          display: inline-block;
         }
         .__reply {
           color: #c63e70;
         }
         .__up {
-          i {
-            color: #5ab25a;
-          }
           &.active {
             i {
               color: #5ab25a;
@@ -263,9 +264,6 @@
           }
         }
         .__down {
-          i {
-            color: #ef5665;
-          }
           &.active {
             i {
               color: #ef5665;
