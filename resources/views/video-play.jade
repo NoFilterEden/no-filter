@@ -9,7 +9,7 @@ block vars
 block main
   section
     .container
-      .video-frame
+      .video-frame.position-relative
         video#player(poster='/path/to/poster.jpg' playsinline='' controls='')
           source(src='dist/images/video.mp4' type='video/mp4')
       .video__description__perks.position-relative
@@ -82,4 +82,99 @@ block main
                   a.text-decoration-none(href="#")
                     <i class="fas fa-user-plus"></i>  
                     span Subscribe 
+  section
+    .container
+      .comments
+        .section-heading.text-center.mb-5.pb-4
+          h2 COMMENTS
+          img(src="dist/images/section.png" alt="") 
+        .comments__template
+          .row
+            .col-md-6.mb-4
+              .comment__count 4 Comments
+
+          form(action="")
+            ul
+              li
+                .d-grid.align-items-center
+                  .img
+                    img(src="dist/images/video-author.png" alt="")  
+                  .text
+                    .row
+                      .col-md-8
+                        a.title(href="#") Ali TUFAN
+                      .col-md-4.text-right
+                        .date 
+                          <i class="far fa-calendar-alt mr-2"></i>
+                          | Jan 16, 2019 07:48 am
+                      .col-12.mt-2  
+                        p.m-0 Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. 
+                      .col-12.mt-3
+                        button.__reply 
+                          <i class="fas fa-reply mr-3"></i>
+                          | Reply
+                        button.__up
+                          <i class="fas fa-thumbs-up mr-1"></i>
+                          | (3)  
+                        button.__down
+                          <i class="fas fa-thumbs-down mr-1"></i>
+                          | (8)  
+              li
+                ul
+                  li
+                    .d-grid.align-items-center
+                      .img
+                        img(src="dist/images/video-author.png" alt="")  
+                      .text
+                        .row
+                          .col-md-8
+                            a.title(href="#") Ali TUFAN
+                          .col-md-4.text-right
+                            .date 
+                              <i class="far fa-calendar-alt mr-2"></i>
+                              | Jan 16, 2019 07:48 am
+                          .col-12.mt-2  
+                            p.m-0 Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. 
+                          .col-12.mt-3
+                            button.__reply 
+                              <i class="fas fa-reply mr-3"></i>
+                              | Reply
+                            button.__up
+                              <i class="fas fa-thumbs-up mr-1"></i>
+                              | (3)  
+                            button.__down
+                              <i class="fas fa-thumbs-down mr-1"></i>
+                              | (8)   
+              li
+                .d-grid.align-items-center
+                  .img
+                    img(src="dist/images/video-author.png" alt="")  
+                  .text
+                    .row
+                      .col-md-8
+                        a.title(href="#") Ali TUFAN
+                      .col-md-4.text-right
+                        .date 
+                          <i class="far fa-calendar-alt mr-2"></i>
+                          | Jan 16, 2019 07:48 am
+                      .col-12.mt-2  
+                        p.m-0 Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. 
+                      .col-12.mt-3
+                        button.__reply 
+                          <i class="fas fa-reply mr-3"></i>
+                          | Reply
+                        button.__up
+                          <i class="fas fa-thumbs-up mr-1"></i>
+                          | (3)  
+                        button.__down
+                          <i class="fas fa-thumbs-down mr-1"></i>
+                          | (8)    
+              li
+                .d-grid.align-items-center
+                  .img
+                    img(src="dist/images/video-author.png" alt="")  
+                  .text
+                    textarea(placeholder="Here what I think...")
+                    .text-right
+                      button(type="submit") Post Comment
 

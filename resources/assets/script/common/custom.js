@@ -66,3 +66,7 @@ $(".chosen-select").chosen({ disable_search_threshold: 10 });
 $(".description-arrow").click(function() {
   $(".video__description").toggleClass("active");
 });
+
+$(".__up,.__down").click(function() {
+  $(this).toggleClass("active");
+});
