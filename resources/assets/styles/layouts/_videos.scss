@@ -193,6 +193,15 @@
   padding: 50px 30px;
   border-radius: 10px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+  button[type="submit"] {
+    background-color: #f88a8d;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 5px 30px;
+    margin-top: 10px;
+    border: none;
+  }
   .comments__template {
     ul {
       padding: 0;
@@ -203,6 +212,7 @@
           padding-left: em(100px);
         }
       }
+
       .d-grid {
         display: grid;
         grid-template-columns: em(80px) 1fr;
@@ -216,15 +226,7 @@
           padding: em(20px);
           color: #888888;
         }
-        button[type="submit"] {
-          background-color: #f88a8d;
-          border-radius: 50px;
-          font-weight: 600;
-          color: #ffffff;
-          padding: 5px 30px;
-          margin-top: 10px;
-          border: none;
-        }
+
         .img {
           img {
             height: em(80px);
