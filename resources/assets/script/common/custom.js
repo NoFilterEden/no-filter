@@ -62,3 +62,7 @@ tinymce.init({
 });
 
 $(".chosen-select").chosen({ disable_search_threshold: 10 });
+
+$(".description-arrow").click(function() {
+  $(".video__description").toggleClass("active");
+});

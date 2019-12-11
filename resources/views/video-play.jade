@@ -1,0 +1,85 @@
+extends layouts/app.jade
+
+block title
+  title Home
+
+block vars
+  - bodyClass = "video-play"  
+
+block main
+  section
+    .container
+      .video-frame
+        video#player(poster='/path/to/poster.jpg' playsinline='' controls='')
+          source(src='dist/images/video.mp4' type='video/mp4')
+      .video__description__perks.position-relative
+        ul.nav.nav-tabs
+          li.active
+            a.text-decoration-none.active(data-toggle='tab' href='#home')
+              svg(xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32')
+                g
+                  g
+                    path(fill='#bcbcbc' d='M29.49 17.99v13.493l9.83-6.746zM0 22.489h25.558v-4.497H0zM33.422 0H0v4.498h33.422zm0 8.995H0v4.498h33.422z')
+              span Description
+          li
+            a.text-decoration-none(data-toggle='tab' href='#menu1') 
+              svg(xmlns='http://www.w3.org/2000/svg' width='39' height='32' viewBox='0 0 39 32')
+                g
+                  g
+                    path(fill='#bcbcbc' d='M29.193 15.515l-1.837 4.025-1.836-4.025-4.026-1.837 4.026-1.837 1.836-4.025 1.837 4.025 4.025 1.837zm-11.118 6.468l-2.443 5.373-2.442-5.373-5.374-2.443 5.374-2.442 2.442-5.374 2.443 5.374 5.373 2.442zM31.265 0l3.907 5.862H29.31L25.402 0h-3.908l3.908 5.862H19.54L15.632 0h-3.908l3.908 5.862H9.77L5.862 0H3.908C1.758 0 .02 1.759.02 3.908L0 27.356a3.92 3.92 0 0 0 3.908 3.908h31.265a3.92 3.92 0 0 0 3.908-3.908V0z')
+              span Perks      
+
+        .tab-content
+          #home.tab-pane.fade.in.active.show
+            .__category
+              span.d-inline-block.mr-1 Category:
+              a(href="#") Tag 1
+              a(href="#") Tag 1
+              a(href="#") Tag 1    
+            .video__description
+              .__height
+                .date 05/11/2019
+                p.m-0  Proin sed arcu cursus, congue arcu id, suscipit lorem. Quisque non erat vitae ipsum pretium vestibulum. Nunc egestas lobortis tortor, at blandit felis ullamcorper non. Vestibulum arcu risus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi id quidem perspiciatis dolorum culpa blanditiis, maiores quasi consectetur voluptate magni expedita dolore reprehenderit, voluptatum, eaque beatae eius enim quo non. Fugit, saepe optio? Sunt obcaecati commodi quas ad repellat ut, repellendus quisquam deserunt id consequatur praesentium magni quibusdam aliquam.
+              .text-center
+                button.description-arrow
+                  <i class="far fa-angle-down"></i>
+            .author__views
+              .author.d-flex.align-items-center
+                .img
+                  img(src="dist/images/video-author.png" alt="")
+                .text 
+                  a(href="#") Bob Martin
+              .views.d-flex.flex-column.align-items-end.justify-content-center
+                .__view
+                  <i class="fas fa-eye"></i>
+                  span 12,500 Views
+                .__like
+                  button 
+                    <i class="fas fa-thumbs-up"></i>
+                    | 12
+                  button 
+                    <i class="fas fa-thumbs-down"></i>
+                    | 0        
+          #menu1.tab-pane.fade 
+            .video__description
+              .__height
+                .date 05/11/2019
+                p.m-0  Proin sed arcu cursus, congue arcu id, suscipit lorem. Quisque non erat vitae ipsum pretium vestibulum. Nunc egestas lobortis tortor, at blandit felis ullamcorper non. Vestibulum arcu risus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi id quidem perspiciatis dolorum culpa blanditiis, maiores quasi consectetur voluptate magni expedita dolore reprehenderit, voluptatum, eaque beatae eius enim quo non. Fugit, saepe optio? Sunt obcaecati commodi quas ad repellat ut, repellendus quisquam deserunt id consequatur praesentium magni quibusdam aliquam.
+              .text-center
+                button.description-arrow
+                  <i class="far fa-angle-down"></i>
+            .author__views
+              .author.d-flex.align-items-center
+                .img
+                  img(src="dist/images/video-author.png" alt="")
+                .text 
+                  a(href="#") Bob Martin
+              .d-flex.flex-column.align-items-end.justify-content-center     
+                .__suscribe
+                  a.text-decoration-none(href="#")
+                    <i class="fas fa-bell"></i>
+                    span Follow  
+                  a.text-decoration-none(href="#")
+                    <i class="fas fa-user-plus"></i>  
+                    span Subscribe 
+
