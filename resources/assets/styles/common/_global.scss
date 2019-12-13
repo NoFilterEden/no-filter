@@ -165,3 +165,27 @@ p {
     }
   }
 }
+
+// =================slick-dots
+.slick-dots {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 40px;
+  button {
+    display: none;
+  }
+  li {
+    height: 14px;
+    width: 14px;
+    background-color: #94999d;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+    &.slick-active {
+      background-color: #f8898d;
+    }
+  }
+}

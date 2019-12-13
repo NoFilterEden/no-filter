@@ -10,18 +10,18 @@ block main
   section
     .container
       .video-frame.position-relative
-        video#player(poster='/path/to/poster.jpg' playsinline='' controls='')
+        video#player(poster='dist/images/thumbnail.png' playsinline='' controls='')
           source(src='dist/images/video.mp4' type='video/mp4')
       .video__description__perks.position-relative
         ul.nav.nav-tabs
-          li.active
+          li.active.mb-2.mb-sm-0
             a.text-decoration-none.active(data-toggle='tab' href='#home')
               svg(xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32')
                 g
                   g
                     path(fill='#bcbcbc' d='M29.49 17.99v13.493l9.83-6.746zM0 22.489h25.558v-4.497H0zM33.422 0H0v4.498h33.422zm0 8.995H0v4.498h33.422z')
               span Description
-          li
+          li.mb-2.mb-sm-0
             a.text-decoration-none(data-toggle='tab' href='#menu1') 
               svg(xmlns='http://www.w3.org/2000/svg' width='39' height='32' viewBox='0 0 39 32')
                 g
@@ -44,12 +44,12 @@ block main
                 button.description-arrow
                   <i class="far fa-angle-down"></i>
             .author__views
-              .author.d-flex.align-items-center
+              .author.d-flex.align-items-center.justify-content-center.justify-content-sm-start
                 .img
                   img(src="dist/images/video-author.png" alt="")
                 .text 
                   a(href="#") Bob Martin
-              .views.d-flex.flex-column.align-items-end.justify-content-center
+              .views.d-flex.flex-column.align-items-sm-end.justify-content-center.align-items-center
                 .__view
                   <i class="fas fa-eye"></i>
                   span 12,500 Views
@@ -61,6 +61,18 @@ block main
                     <i class="fas fa-thumbs-down"></i>
                     | 0        
           #menu1.tab-pane.fade 
+            .btn-group.dropleft
+              div(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                .dot
+                .dot
+                .dot
+              .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                a.dropdown-item(href='#')
+                  <i class="fas fa-plus mr-2"></i>
+                  | Archive
+                a.dropdown-item(href='#')
+                  <i class="fas fa-share-alt mr-2"></i>
+                  | Share
             .video__description
               .__height
                 .date 05/11/2019
@@ -69,23 +81,64 @@ block main
                 button.description-arrow
                   <i class="far fa-angle-down"></i>
             .author__views
-              .author.d-flex.align-items-center
+              .author.d-flex.align-items-center.justify-content-center.justify-content-sm-start
                 .img
                   img(src="dist/images/video-author.png" alt="")
                 .text 
                   a(href="#") Bob Martin
-              .d-flex.flex-column.align-items-end.justify-content-center     
-                .__suscribe
-                  a.text-decoration-none(href="#")
-                    <i class="fas fa-bell mr-1"></i>
-                    span Follow  
-                  a.text-decoration-none(href="#")
-                    <i class="fas fa-user-plus mr-1"></i>  
-                    span Subscribe 
+              .d-flex.flex-column.align-items-sm-end.justify-content-center.align-items-center     
+                .__suscribe.text-center.text-sm-right
+                  a.text-decoration-none.btn.mb-2.mb-sm-0(href="#")
+                    <i class="fas fa-bell mr-md-1"></i>
+                    span.d-sm-none.d-md-inline-block Follow  
+                  a.text-decoration-none.btn.mb-2.mb-sm-0(href="#")
+                    <i class="fas fa-user-plus mr-md-1"></i>  
+                    span.d-sm-none.d-md-inline-block Subscribe 
+  section.space.pb-0
+    .container
+      .row
+        .col-12
+          .section-heading.text-center.mb-4.mb-sm-5.pb-4
+            h2 Similar Videos
+            img(src="dist/images/section.png" alt="") 
+      .video-carsual
+        - for(var x=0; x<9; x++)
+          .item
+            .item-top
+              a.img.position-relative.d-block.text-decoration-none(href="#")
+                img.w-100.video-img(src="dist/images/video-car.png" alt="") 
+                img.play(src="dist/images/video-play-car.png" alt="")
+              .d-flex.align-items-center
+                .text.position-relative.w-100
+                  a.title(href="#") Lorem ipsum dolor 
+                  .date 01/11/2019
+                  .btn-group.dropleft
+                    div(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                      .dot
+                      .dot
+                      .dot
+                    .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                      a.dropdown-item(href='#')
+                        <i class="fas fa-plus mr-2"></i>
+                        | Archive
+                      a.dropdown-item(href='#')
+                        <i class="fas fa-share-alt mr-2"></i>
+                        | Share
+            .item-bottom
+              .author__views.m-0
+                .author.d-flex.align-items-center.w-100
+                  .img
+                    img(src="dist/images/video-author.png" alt="")
+                  .text 
+                    a(href="#") Bob Martin
+                .views.d-flex.flex-column.align-items-end.justify-content-center
+                  .__view.border-0
+                    <i class="fas fa-eye"></i>
+                    span 12,500    
   section
     .container
       .comments
-        .section-heading.text-center.mb-5.pb-4
+        .section-heading.text-center.mb-4.mb-sm-5.pb-4
           h2 COMMENTS
           img(src="dist/images/section.png" alt="") 
         .comments__template
@@ -101,9 +154,9 @@ block main
                     img(src="dist/images/video-author.png" alt="")  
                   .text
                     .row
-                      .col-md-8
+                      .col-md-8.col-sm-6.mb-2.mb-sm-0
                         a.title(href="#") Ali TUFAN
-                      .col-md-4.text-right
+                      .col-md-4.col-sm-6.mb-2.mb-sm-0.text-sm-right
                         .date 
                           <i class="far fa-calendar-alt mr-2"></i>
                           | Jan 16, 2019 07:48 am
@@ -127,9 +180,9 @@ block main
                         img(src="dist/images/video-author.png" alt="")  
                       .text
                         .row
-                          .col-md-8
+                          .col-md-8.col-sm-6.mb-2.mb-sm-0
                             a.title(href="#") Ali TUFAN
-                          .col-md-4.text-right
+                          .col-md-4.col-sm-6.mb-2.mb-sm-0.text-sm-right
                             .date 
                               <i class="far fa-calendar-alt mr-2"></i>
                               | Jan 16, 2019 07:48 am
@@ -151,9 +204,9 @@ block main
                     img(src="dist/images/video-author.png" alt="")  
                   .text
                     .row
-                      .col-md-8
+                      .col-md-8.col-sm-6.mb-2.mb-sm-0
                         a.title(href="#") Ali TUFAN
-                      .col-md-4.text-right
+                      .col-md-4.col-sm-6.mb-2.mb-sm-0.text-sm-right
                         .date 
                           <i class="far fa-calendar-alt mr-2"></i>
                           | Jan 16, 2019 07:48 am

@@ -2,7 +2,7 @@ $(".carosual").slick({
   dots: false,
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 10,
   slidesToScroll: 1,
   prevArrow: '<i class="far fa-angle-left left"></i>',
   nextArrow: '<i class="far fa-angle-right right"></i>',
@@ -40,40 +40,26 @@ $(".carosual").slick({
 });
 
 $(".video-carsual").slick({
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
-  slidesToScroll: 1,
-  prevArrow: '<i class="far fa-angle-left left"></i>',
-  nextArrow: '<i class="far fa-angle-right right"></i>',
+  slidesToScroll: 3,
+  prevArrow: '<i class="fas fa-caret-left"></i>',
+  nextArrow: '<i class="fas fa-caret-right"></i>',
   autoplay: false,
   responsive: [
     {
       breakpoint: 991,
       settings: {
-        slidesToShow: 6,
-        slidesToScroll: 1
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
-        slidesToShow: 5,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     }
