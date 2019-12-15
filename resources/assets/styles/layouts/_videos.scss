@@ -356,9 +356,16 @@
     border-radius: 50%;
     left: -74px;
     top: 42%;
+    z-index: 9;
+    @include xl {
+      left: -15px;
+    }
     &.fa-caret-right {
       left: auto;
       right: -74px;
+      @include xl {
+        right: -15px;
+      }
     }
   }
   .item {
@@ -371,8 +378,8 @@
     }
     .item-top {
       background: #fff;
-      box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
-      border-radius: 20px;
+      // box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+      // border-radius: 20px;
       .img {
         .video-img {
           border-radius: 20px;
@@ -418,6 +425,18 @@
       margin: 0 auto;
       top: 50%;
       margin-top: (-57px/2);
+    }
+  }
+}
+
+.archive {
+  &.show {
+    i {
+      font-weight: 900;
+      color: red;
+      &:before {
+        content: "\f004";
+      }
     }
   }
 }

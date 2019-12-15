@@ -97,3 +97,7 @@ $(".description-arrow").click(function() {
 $(".__up,.__down").click(function() {
   $(this).toggleClass("active");
 });
+
+$(".archive").click(function() {
+  $(this).toggleClass("show");
+});
