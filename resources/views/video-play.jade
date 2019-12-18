@@ -31,6 +31,18 @@ block main
 
         .tab-content
           #home.tab-pane.fade.in.active.show
+            .btn-group.dropleft
+              div(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                .dot
+                .dot
+                .dot
+              .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                a.dropdown-item.archive(href='#')
+                  <i class="far fa-heart mr-2"></i>
+                  | Archive
+                a.dropdown-item(href='#')
+                  <i class="fas fa-share-alt mr-2"></i>
+                  | Share
             .__category
               span.d-inline-block.mr-1 Category:
               a(href="#") Tag 1
@@ -38,7 +50,8 @@ block main
               a(href="#") Tag 1    
             .video__description
               .__height
-                .date 05/11/2019
+                .title Lorem, ipsum.
+                  .date 05/11/2019
                 p.m-0  Proin sed arcu cursus, congue arcu id, suscipit lorem. Quisque non erat vitae ipsum pretium vestibulum. Nunc egestas lobortis tortor, at blandit felis ullamcorper non. Vestibulum arcu risus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi id quidem perspiciatis dolorum culpa blanditiis, maiores quasi consectetur voluptate magni expedita dolore reprehenderit, voluptatum, eaque beatae eius enim quo non. Fugit, saepe optio? Sunt obcaecati commodi quas ad repellat ut, repellendus quisquam deserunt id consequatur praesentium magni quibusdam aliquam.
               .text-center
                 button.description-arrow
