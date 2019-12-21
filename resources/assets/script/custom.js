@@ -94,7 +94,7 @@ $(".description-arrow").click(function() {
   $(".video__description").toggleClass("active");
 });
 
-$(".__up,.__down").click(function() {
+$(".__up,.__down,.follow,.suscribe").click(function() {
   $(this).toggleClass("active");
 });
 

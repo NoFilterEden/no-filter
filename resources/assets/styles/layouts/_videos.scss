@@ -130,17 +130,17 @@
     color: #bcbcbc;
     margin-top: calc-em(50, 20);
     .__height {
-      height: 4.2em;
+      height: 4.3em;
       overflow: hidden;
       transition: 0.5s;
     }
     p {
       color: #bcbcbc;
     }
-    .title{
+    .title {
       font-weight: 700;
       font-size: 1.2em;
-      .date{
+      .date {
         font-size: 14px;
       }
     }
@@ -319,20 +319,6 @@
         .__reply {
           color: #c63e70;
         }
-        .__up {
-          &.active {
-            i {
-              color: #5ab25a;
-            }
-          }
-        }
-        .__down {
-          &.active {
-            i {
-              color: #ef5665;
-            }
-          }
-        }
       }
     }
   }
@@ -446,4 +432,37 @@
       }
     }
   }
+}
+
+.follow,
+.suscribe {
+  &.active {
+    i {
+      &:before {
+        font-weight: 400;
+        font-family: "Font Awesome 5 Pro";
+        content: "\f00c";
+      }
+    }
+  }
+}
+
+.__up {
+  &.active {
+    i {
+      color: #5ab25a !important;
+    }
+  }
+}
+.__down {
+  &.active {
+    i {
+      color: #ef5665 !important;
+    }
+  }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: transparent;
 }
