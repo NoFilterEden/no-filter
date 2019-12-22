@@ -110,6 +110,10 @@
     position: absolute;
     top: 2.6em;
     right: calc-em(60, 18);
+    &.active {
+      position: static;
+      margin-bottom: 30px;
+    }
     @include lg {
       position: static;
       margin-top: 30px;
