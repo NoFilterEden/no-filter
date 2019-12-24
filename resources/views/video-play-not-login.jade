@@ -197,6 +197,9 @@ block main
           .row
             .col-md-6.mb-4
               .comment__count 4 Comments
+            .col-md-6.mb-4.text-right  
+              .sign-in
+                a(href="#") Sign In
 
           form(action="")
             ul
@@ -274,13 +277,4 @@ block main
                         span.d-inline-block.__down.commnet-button
                           <i class="fas fa-thumbs-down mr-1"></i>
                           | (8)     
-              li
-                .d-grid.align-items-center.mb-0
-                  .img
-                    img(src="dist/images/video-author.png" alt="")  
-                  .textarea.position-relative
-                    textarea(placeholder="Here what I think...")
-                    .count 150/150
-                .text-right
-                  button(type="submit") Post Comment
 
