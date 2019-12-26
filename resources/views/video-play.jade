@@ -44,7 +44,7 @@ block main
                   <i class="fas fa-share-alt mr-2"></i>
                   | Share
                 a.dropdown-item.playlist-tigger(href='#')
-                  <i class="fab fa-playstation mr-2"></i>
+                  <i class="fas fa-plus-circle mr-2"></i>
                   | Playlist 
                   ul.playlist
                     li 
@@ -109,7 +109,7 @@ block main
                   <i class="fas fa-share-alt mr-2"></i>
                   | Share
                 a.dropdown-item.playlist-tigger(href='#')
-                  <i class="fab fa-playstation mr-2"></i>
+                  <i class="fas fa-plus-circle mr-2"></i>
                   | Playlist 
                   ul.playlist
                     li 
@@ -176,6 +176,22 @@ block main
                       a.dropdown-item(href='#')
                         <i class="fas fa-share-alt mr-2"></i>
                         | Share
+                      a.dropdown-item.playlist-tigger(href='#')
+                        <i class="fas fa-plus-circle mr-2"></i>
+                        | Playlist 
+                        ul.playlist(style="top: 0")
+                          li 
+                            label(for="one")
+                              <input type="checkbox" id="one" name="vehicle1" value="Bike">
+                              span Playlist One
+                          li 
+                            label(for="two")
+                              <input type="checkbox" id="two" name="vehicle1" value="Bike">
+                              span Playlist two
+                          li 
+                            label(for="three")
+                              <input type="checkbox" id="three" name="vehicle1" value="Bike">
+                              span Playlist three   
             .item-bottom
               .author__views.m-0
                 .author.d-flex.align-items-center.w-100
@@ -273,7 +289,10 @@ block main
                           | (3)  
                         span.d-inline-block.__down.commnet-button
                           <i class="fas fa-thumbs-down mr-1"></i>
-                          | (8)     
+                          | (8) 
+              li
+                .mx-auto.mt-5.mb-5(style="max-width: 194px;")
+                  a.button.btn.text-uppercase.d-flex.align-items-center.justify-content-center(href="#") See more                      
               li
                 .d-grid.align-items-center.mb-0
                   .img
