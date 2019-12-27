@@ -510,6 +510,10 @@
 
 .comments .sign-in {
   a {
-    color: #c63e70;
+    background: #c63e70;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    display: inline-block;
   }
 }
