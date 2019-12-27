@@ -1,6 +1,6 @@
 $(".carosual").slick({
   dots: false,
-  infinite: true,
+  infinite: false,
   speed: 300,
   slidesToShow: 10,
   slidesToScroll: 1,
