@@ -1,8 +1,39 @@
 /* CSS part for following/cool-channel template*/
 /* coded by Arup Ratan Sarker*/
-img{
-	width:100%;
+
+
+.video-play .dropdown-menu{
+	min-width: unset;
+	padding: 0;
 }
+.video-play .dropdown-menu .dropdown-item{
+	padding: unset;
+}
+
+.video-play .dropdown-menu a {
+	padding: 10px 17px;
+	width:100%;
+	display: inline-block;
+	text-decoration: none;
+}
+.video-play .dropdown-menu a:hover {
+	background-color: #fd8b8b;
+	color:#ffffff;
+}
+
+.video-play .dropdown-menu a i{
+	margin-right: 10px;
+}
+
+.video-play .dropdown-menu a .fa-heart{
+	margin-right: 10px;
+	color:red;
+}
+
+.video-play .dropdown-toggle::after {
+	display: none;
+}
+
 p {
  margin:0;
 }
