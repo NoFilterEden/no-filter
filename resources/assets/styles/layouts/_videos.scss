@@ -510,10 +510,15 @@
 
 .comments .sign-in {
   a {
-    background: #c63e70;
+    background: #fd8b8b;
     color: #fff;
-    padding: 5px 20px;
+    padding: 10px 40px;
     border-radius: 50px;
     display: inline-block;
+    transition: 0.3s;
+    text-decoration: none;
+    &:hover {
+      background: #ef3e33;
+    }
   }
 }
