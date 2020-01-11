@@ -1,0 +1,22 @@
+extends layouts/app.jade
+
+block title
+  title Title & Description
+
+block main
+  main.space
+    .container
+      .row
+        .col-12
+          h3.aside-heading Video upload Panel
+      .row
+        +sidebar()
+        .col-lg-8.col-md-7
+          .editor
+            form(action="#")
+              input(type="text" placeholder="Type video title")
+              textarea.tinyMCE
+          .navigation
+            //- a.text-decoration-none(href="#") Prev
+            a.text-decoration-none(href="#") NEXT    
+

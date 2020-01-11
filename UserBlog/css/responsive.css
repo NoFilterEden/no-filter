@@ -1,0 +1,370 @@
+@media (max-width: 1199.98px) {
+
+    .chat-op .box .text {
+        max-width: 75%;
+        padding: 8px 20px;
+    }
+     .cname .c23{
+        right: 0;
+    }
+    .profile-pic{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .chat-content .content .pic img {
+        max-width: 75px;
+    }
+    
+
+    .chat-content .content .text {
+        padding-left: 65px;
+    }
+
+    .chat-content .content .text .par p {
+        font-size: 11px;
+        line-height: normal;
+    }
+
+    .user-details .buttons {
+    top: 95px;
+}
+    .top-area .buttons, .top-area .menu{
+        margin-right: 0;
+    }
+    .main-header {
+    padding: 20px 0;
+}
+   
+}
+
+@media (max-width: 767.98px) {
+
+    .main-content {
+        padding-left: 120px;
+        margin-top: 90px;
+    }
+
+    .main-content {
+        overflow: visible;
+    }
+
+    .chat-content {
+        height: auto;
+    }
+
+    .l-responsive {
+        background-image: linear-gradient(#ff7e7e, #f36969);
+        max-width: 7rem;
+        text-align: center;
+        padding: 25px;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: 2;
+    }
+   
+
+    .l-responsive img {
+        display: block;
+        width: 80px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .cname .c23 {
+        position: absolute;
+        bottom: -60px;
+        right: 0;
+    }
+
+    .left-bar {
+        position: fixed;
+        top: 89px;
+        left: -100%;
+        width: 90%;
+        min-height: 100%;
+        z-index: 9;
+        text-align: center;
+        opacity: 0;
+        transition: .4s;
+    }
+
+    .left-bar.active {
+        position: relative;
+        left: -90px;
+        opacity: 1;
+        min-height: inherit;
+        overflow: hidden;
+        position: absolute;
+        top: -10px;
+    }
+    .left-bar.active :before{
+        opacity: 1;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        display: none;
+    }
+
+    .chat-op h5,
+    .topic h5 {
+        text-align: left;
+    }
+
+    .type-box {
+        padding: 15px 20px;
+    }
+
+    .type-box .plus {
+        font-size: 6px;
+        top: 11px;
+    }
+
+    .type-box textarea {
+        height: 23px;
+        padding: 5px 5px;
+        font-size: 9px;
+    }
+
+    .type-box input {
+        width: 45px;
+        font-size: 11px;
+    }
+
+    .type-box .count {
+        bottom: -35px;
+        font-size: 12px;
+    }
+
+    .widget .box {
+        margin-bottom: 10px;
+    }
+
+    .widget .box img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .widget .box .text {
+        padding-left: 0;
+    }
+
+    .widget .box .text a {
+        font-size: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .widget .box .text span {
+        font-size: 10px;
+    }
+    .c404 {
+    margin-top: 73px;
+}
+    
+}
+
+@media (max-width: 580px) {
+
+    .main-content {
+        padding-left: 65px;
+    }
+
+    .l-responsive {
+        max-width: 60px;
+        padding: 15px;
+    }
+    .left-bar.active{
+        left: -9%;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .top-area a {
+        max-width: 9rem;
+        padding: 7px 0px;
+        margin: 5px;
+    }
+    .chat-content {
+        padding: 10px;
+    }
+
+    .chat-content .content .pic img {
+        max-width: 40px;
+    }
+
+    .chat-content .content .text {
+        padding-left: 25px;
+    }
+
+    .chat-content .content .text h5 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .chat-content .content .text .par {
+        padding: 10px 0px;
+        padding-left: 19px;
+    }
+
+    .d12 h6 {
+        font-size: 11px;
+    }
+
+    .d12 span {
+        font-size: 14px;
+    }
+
+    .d12 {
+        top: 8px;
+    }
+
+    .chat-content .content .text h5 span {
+        top: 8px;
+        left: 95px;
+        width: 30px;
+    }
+
+    .chat-content .content .text h5 .mod {
+        left: 90px;
+        top: 15px;
+        font-size: ;
+    }
+
+    .photo img {
+        max-width: 100%;
+    }
+
+    .chat-content .text1 p {
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    .change-photo {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .b112 .buttons {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 10px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .ppic {
+        text-align: center;
+    }
+
+    .ppic ul,
+    .p-menu ul {
+        display: inline-block;
+    }
+
+    .p-menu {
+        text-align: center;
+    }
+
+    .p-menu ul li {
+        float: inherit;
+        margin: 10px 0;
+    }
+    .top-area .buttons a{
+        font-size: 11px;
+    }
+    .left-bar.active{
+        max-width: 20rem;
+    }
+    .chat-content .box {
+    height: 515px;
+}
+}
+
+@media (max-width: 460px) {
+    .top-area a {
+        max-width: 6rem;
+        padding: 4px 0px;
+        margin: 5px;
+    }
+
+    .top-area a img {
+        width: 70%;
+    }
+    .top-area .menu ul li a {
+        font-size: 12px;
+    }
+
+    .cname button {
+        font-size: 10px;
+    }
+
+    .chat-content {
+        position: relative;
+    }
+    .left-bar.active {
+    left: -50px;
+    top: -15px;
+}
+
+    .chat-content h4 {
+        position: absolute;
+        top: -50px;
+        font-size: 16px;
+    }
+
+    .chat-content .content .text .par p {
+        font-size: 10px;
+        padding-right: 2px;
+    }
+
+    .left-bar .user {
+        padding: 0;
+    }
+
+    .profile-pic {
+        max-width: 100%;
+    }
+
+    .left-bar .user .online {
+        position: absolute;
+        width: 35px;
+        top: -1px;
+        right: 15px;
+    }
+    .top-area .buttons a {
+    width: 111px;
+    padding: 10px 10px;
+    font-size: 9px;
+    max-width: inherit;
+}
+    .widget form li{
+        width: 23%;
+    }
+    .c404 h4{
+        font-size: 23px;
+    }
+    .blog .box form {
+    max-width: 20rem;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+}

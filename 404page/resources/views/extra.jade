@@ -1,0 +1,47 @@
+extends layouts/app.jade
+
+block title
+  title Extras
+
+block main
+  main.space
+    .container
+      .row
+        .col-12
+          h3.aside-heading Video upload Panel
+      .row
+        +sidebar('h-auto')
+        .col-lg-8.col-md-7
+          .video-upload.position-relative
+            form(action="#")
+              .row.mb-3
+                .col-lg-6.mb-4
+                  h3.aside-heading.small Video status
+                  select.selectpicker.form-control(title="Published")
+                    option Mustard
+                    option Ketchup
+                    option Barbecue
+                .col-lg-6.mb-4
+                  h3.aside-heading.small Allow comments?
+                  select.selectpicker.form-control(title="Yes")
+                    option Mustard
+                    option Ketchup
+                    option Barbecue    
+
+              h3.aside-heading.small Wanna say something to Admin? (Optional)
+              .code.mb-5
+                textarea.b-shadow.w-100.border-0.p-3(style="min-height: 190px;")
+                .check-box
+                  label.d-flex.align-items-center(for="guidelines")
+                    .box
+                      input(type='checkbox' id="guidelines" name='guidelines' value='30' checked)
+                      .checkmark.d-flex.align-items-center.justify-content-center.b-shadow
+                    span I accept all video upload guidelines  
+                  label.d-flex.align-items-center(for="policy")
+                    .box
+                      input(type='checkbox' id="policy" name='policy' value='30')
+                      .checkmark.d-flex.align-items-center.justify-content-center.b-shadow
+                    span I accept no filter website privacy policy as well as terms and conditions 
+          .navigation
+            a.text-decoration-none(href="#") Finish
+

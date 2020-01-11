@@ -1,0 +1,586 @@
+
+.main-header {
+    box-shadow: 0px 0px 8px 0px rgba($color: #000000, $alpha: .25);
+}
+.payment-area {
+    padding: 30px 30px;
+    .pay-goback-btn {
+        padding: 8px 35px 8px 15px;
+        background: linear-gradient(90deg , #fd8b8b, #f9a1a1);
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: backgroud 0.3s;
+        i {
+            padding-right: 20px;
+        }
+    }
+    .pay-goback-btn:hover {
+        background: #dc3545;
+    }
+    .pymnt-ttl {
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        color: #555555;
+        text-transform: uppercase;
+    }
+    .main-payment-box {
+        margin-top: 30px;
+        .all-payment-box {
+            background: #ffffff;
+            box-shadow: 10px 15px 55px -5px rgba($color: #000000, $alpha: .3);
+            border-radius: 10px;
+        }
+        .pymnt-profile {
+            height: 100%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 10px;
+            background: #f8898d;
+            .pymnt-holder-pic {
+                height: 150px;
+                width: 150px;
+                text-align: center;
+                margin: 0 auto;
+                background: #f2b01e;
+                border: 10px solid #ffffff;
+                border-radius: 50%;
+                box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: .3);
+                img {
+                    max-width: 100%;
+                }
+            }
+            .pymnt-holder-details {
+                .ph-name {
+                    padding-top: 10px;
+                    font-size: 25px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+                .pp-dis {
+                    padding: 0 10px;
+                    font-size: 12px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-family: "Roboto",sans-serif;
+                }
+                .ppd-count {
+                    margin: 0;
+                    padding: 0 20px;
+                    font-size: 22px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-family: "Roboto",sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+            .pymnt-video {
+                padding: 15px 12% 0 12%;
+            }
+            .pymnt-smry {
+                padding: 15px 12% 0 12%;
+                .ps-ttl {
+                    font-size: 25px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-family: "Roboto",sans-serif;
+                }
+                .ps-dis {
+                    font-size: 17px;
+                    color: #ffffff;
+                    font-family: "Roboto",sans-serif;
+                }
+            }
+        }
+    }
+    .pymnt-method {
+        padding: 35px 50px;
+        .pm-ttl {
+            padding-bottom: 40px;
+            font-size: 25px;
+            color: #6d6d6d;
+            font-weight: bold;
+            font-family: "Roboto",sans-serif;
+        }
+        .payment-method-box {
+            padding-left: 30px;
+            ul {
+                padding: 0;
+                padding-bottom: 40px;
+                margin: 0;
+                list-style: none;
+                list-style-type: none;
+                li {
+                    margin: 0;
+                    padding: 0;
+                    padding-right: 25px;
+                    display: inline-block;
+                    width: auto;
+                    a {
+                        text-decoration: none;
+                        padding: 10px 15px;
+                        font-size: 20px;
+                        color: #707070;
+                        font-family: "Roboto",sans-serif;
+                        .pm-checkbox {
+                            margin-right: 10px;
+                            display: inline-block;
+                            height: 14px;
+                            width: 14px;
+                            border-radius: 50%;
+                            background: #ffffff;
+                            border: 1px solid #f8898d;
+                            position: relative;
+                            span.active {
+                                position: absolute;
+                                height: 12px;
+                                width: 12px;
+                                background: #f8898d;
+                                border-radius: 50%;
+                                border: 2px solid #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+            // New payment method-------------
+            .new-payment-method {
+                display: none;
+                width: 80%;
+                input {
+                    padding: 28px 20px;
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                }
+                .other-pay-option {
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    color: #777777;
+                    position: relative;
+                }
+                .other-pay-option::before,
+                .other-pay-option::after {
+                    content: '';
+                    position: absolute;
+                    top: 13px;
+                    width: 42%;
+                    height: 2px;
+                    background: rgba($color: #000000, $alpha: 0.3);
+                    border-radius: 2px;
+                }
+                .other-pay-option::before {
+                    left: 0;
+                }
+                .other-pay-option::after {
+                    right: 0;
+                }
+                .pay-paypal {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #40c3ff;
+                    border-radius: 10px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+            .pymnt-ceckbox {
+                padding-bottom: 20px;
+                .single-checkbox {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 12px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    user-select: none;
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #ffffff;
+                        border: 2px solid #f8898d;
+                        border-radius: 2px;
+                    }
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    p {
+                        font-size: 16px;
+                        margin-bottom: 2px;
+                        a {
+                            color: #777777;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .single-checkbox:hover input ~ .checkmark {
+                    background-color: #ffbec1;
+                }
+                .single-checkbox input:checked ~ .checkmark {
+                    background-color: #f8898d;
+                }
+                .single-checkbox input:checked ~ .checkmark:after {
+                    display: block;
+                }
+                .single-checkbox .checkmark:after {
+                    left: 6px;
+                    top: 3px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 3px 3px 0;
+                    transform: rotate(45deg);
+                }
+            }
+            .pay-sub-btn {
+                width: 100%;
+                padding: 5px;
+                text-align: center;
+                background: #f8898d;
+                border-radius: 10px;
+                a {
+                    display: inline-block;
+                    font-size: 25px;
+                    height: 100%;
+                    width: 100%;
+                    color: #ffffff;
+                    font-family: "Roboto",sans-serif
+                }
+            }
+            // ---Old Payment method===========
+            .old-payment-method {
+                display: none;
+                padding-bottom: 10px;
+                .opm-ttl {
+                    font-size: 22px;
+                    color: #888888;
+                    font-family: sans-serif;
+                    margin-bottom: 15px;
+                }
+                .old-single-card {
+                    margin-bottom: 20px;
+                    height: 100%;
+                    width: 100%;
+                    border: 2px solid #ffa1a5;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    .osc-pd {
+                        padding: 10px 35px;
+                    }
+                    .old-card-ttl {
+                        font-size: 30px;
+                        color: #777777;
+                        font-family: sans-serif;
+                    }
+                    .old-card-nmbr {
+                        font-size: 20px;
+                        color: #777777;
+                        font-family: sans-serif;
+                    }
+                    .old-more-card {
+                        width: 101%;
+                        height: 101%;
+                        background: #ffa1a5;
+                        border-radius: 8px;
+                        text-align: center;
+                        a {
+                            color: #ffffff;
+                            font-size: 20px;
+                            position: relative;
+                            top: 40%;
+                        }
+                    }
+                }
+                .old-single-card.active {
+                    background: #f8898d;
+                }
+            }
+            // -------Payment method button-----
+            .payment-method-active {
+                display: block !important;
+            }
+            // ======All error astart============
+            .pm-card-name {
+                position: relative;
+                .name-error-details {
+                    p {
+                        color: #df1266;
+                        font-size: 17px;
+                        padding-bottom: 15px;
+                        padding-left: 5px;
+                        margin-top: -13px;
+                    }
+                }
+            }
+            .pm-card-number {
+                position: relative;
+                .card-number-error {
+                    position: absolute;
+                    top: 15px;
+                    right: 12px;
+                    height: 30px;
+                    width: 35px;
+                    img {
+                        cursor: pointer;
+                    }
+                }
+                .cn-error-details {
+                    position: absolute;
+                    top: 75px;
+                    right: -55%;
+                    width: 70%;
+                    height: auto;
+                    padding: 10px 15px 25px 15px;
+                    background: #df1266;
+                    text-align: center;
+                    z-index: 999;
+                    p {
+                        font-size: 16px;
+                        color: #ffffff;
+                    }
+                }
+                .cn-error-details::before{
+                    content: '';
+                    position: absolute;
+                    top: -27px;
+                    left: 20px;
+                    z-index: 998;
+                    border-left: 30px solid #df1266;
+                    border-top: 30px solid rgba($color: #000000, $alpha: 0);
+                }
+            }
+        }
+    }
+}
+
+
+// ====================All Error stsyes==-=-==
+
+
+.main-popup-msg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 999;
+}
+.payment-popup-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    background: #f8898d;
+    z-index: 998;
+    overflow: hidden;
+    .ppm-box {
+        height: 100%;
+        width: 100%;
+        border: 1px solid #ffffff;
+        padding: 15px;
+        h4.ppm-ttl {
+            font-size: 17px;
+            font-family: "Roboto",sans-serif;
+            color: #f0f0f0;
+        }
+        .ppm-icon {
+            padding: 10px;
+            margin-bottom: 20px;
+            i {
+                padding: 8px;
+                width: 50px;
+                height: 50px;
+                font-size: 30px;
+                line-height: 35px;
+                background: #ffffff;
+                color: #f8898d;
+                border-radius: 50%;
+            }
+        }
+        .ppm-btn {
+            a {
+                margin: 0 15px;
+                padding: 2px 10px;
+                font-size: 14px;
+                font-family: "Roboto",sans-serif;
+                color: #f8898d;
+                background: #ffffff;
+                border-radius: 20px;
+                i {
+                    color: #f8898d;
+                    font-size: 16px;
+                    padding: 0 8px;
+                }
+            }
+        }
+    }
+}
+.number-error-details p {
+    color: #f00;
+    font-size: 17px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+// Please remove this class------
+.remove-class-one {
+    transform: none;
+    top: 15% !important;
+    left: 15% !important;
+    z-index: 9999939;
+}
+.remove-class-two {
+    transform: none;
+    top: 15% !important;
+    left: 60% !important;
+    z-index: 9999939;
+}
+.remove-class-three {
+    transform: none;
+    top: 60% !important;
+    left: 15% !important;
+    z-index: 9999939;
+}
+.remove-class-four {
+    transform: none;
+    top: 60% !important;
+    left: 60% !important;
+    z-index: 9999939;
+}
+// Please remove this class------^^^^^-----
+
+
+// ----------=====Responsive design start=======-----------
+@media (max-width:1000px) {
+    .payment-area {
+        padding: 30px 15px;
+    }
+    .payment-area .pymnt-method {
+        padding: 35px 40px;
+    }
+    .payment-area .pymnt-method .payment-method-box .pm-card-number .cn-error-details {
+        right: -43%;
+        width: 62%;
+        padding: 8px 12px 13px 12px;
+    }
+}
+@media (max-width:500px) {
+    .payment-area .pymnt-method .payment-method-box .new-payment-method {
+        width: 100%;
+    }
+    .payment-area .pymnt-method .pm-ttl {
+        padding-bottom: 15px;
+    }
+    .payment-area .pymnt-method {
+        padding: 25px 30px;
+    }
+    .payment-area .pymnt-method .payment-method-box {
+        padding-left: 0;
+    }
+    .payment-area .pymnt-method .payment-method-box .pm-card-number .cn-error-details {
+        right: -10%;
+        
+    }
+    .payment-area .pymnt-method .payment-method-box .pm-card-number .cn-error-details::before {
+        left: 71%;
+    }
+    .payment-area .pymnt-method .payment-method-box .pymnt-ceckbox .single-checkbox p {
+        font-size: 15px;
+    }
+    .number-error-details p {
+        font-size: 15px;
+    }
+}
+@media (max-width:350px) {
+    .payment-area {
+        padding: 25px 0;
+    }
+    .payment-area .pay-goback-btn {
+        margin-left: 15px;
+        padding: 8px 20px 8px 12px;
+        font-size: 14px;
+    }
+    .payment-area .main-payment-box .pymnt-profile .pymnt-holder-pic {
+        height: 130px;
+        width: 130px;
+    }
+    .payment-area .main-payment-box .pymnt-profile .pymnt-holder-details .ph-name {
+        font-size: 22px;
+    }
+    .payment-area .main-payment-box .pymnt-profile .pymnt-video {
+        padding: 0px 5% 0 5%;
+    }
+    .payment-area .pymnt-method .payment-method-box ul li a {
+        font-size: 16px;
+    }
+    .payment-area .pymnt-method .payment-method-box ul {
+        padding-bottom: 25px;
+    }
+    .payment-area .pymnt-method .payment-method-box .new-payment-method input {
+        padding: 23px 18px;
+        margin-bottom: 15px;
+    }
+    .payment-area .pymnt-method .payment-method-box .pm-card-number .cn-error-details {
+        right: -7%;
+    }
+    .payment-area .pymnt-method .payment-method-box .pm-card-number .cn-error-details::before {
+        left: 68%;
+    }
+    .payment-area .pymnt-method .payment-method-box .pm-card-number .cn-error-details p {
+        font-size: 13px;
+    }
+    .payment-area .pymnt-method .payment-method-box .new-payment-method .pay-paypal a img {
+        width: 120px;
+    }
+    .payment-area .pymnt-method .payment-method-box .pymnt-ceckbox .single-checkbox p {
+        font-size: 13px;
+    }
+    .payment-area .pymnt-method .payment-method-box .pay-sub-btn {
+        padding: 0;
+    }
+    .payment-area .pymnt-method .payment-method-box .pay-sub-btn a {
+        font-size: 20px;
+    }
+    .number-error-details p {
+        font-size: 13px;
+    }
+}
+@media (max-width:320px) {
+    .payment-area .main-payment-box .pymnt-profile .pymnt-video {
+        padding: 0px 4% 0 4%;
+    }
+    .payment-area .pymnt-method {
+        padding: 22px 20px;
+    }
+    .payment-area .pymnt-method .payment-method-box ul li a {
+        padding: 5px 5px !important;
+    }
+    .number-error-details p {
+        font-size: 12px;
+    }
+}

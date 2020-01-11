@@ -1,0 +1,305 @@
+extends layouts/app.jade
+
+block title
+  title Home
+
+block vars
+  - bodyClass = "video-play"  
+
+block main
+  section
+    .container
+      .video-frame.position-relative
+        video#player(poster='dist/images/thumbnail.png' playsinline='' controls='')
+          source(src='dist/images/video.mp4' type='video/mp4')
+      .video__description__perks.position-relative
+        ul.nav.nav-tabs
+          li.active.mb-2.mb-sm-0
+            a.text-decoration-none.active(data-toggle='tab' href='#home')
+              svg(xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32')
+                g
+                  g
+                    path(fill='#bcbcbc' d='M29.49 17.99v13.493l9.83-6.746zM0 22.489h25.558v-4.497H0zM33.422 0H0v4.498h33.422zm0 8.995H0v4.498h33.422z')
+              span Description
+          li.mb-2.mb-sm-0
+            a.text-decoration-none(data-toggle='tab' href='#menu1') 
+              svg(xmlns='http://www.w3.org/2000/svg' width='39' height='32' viewBox='0 0 39 32')
+                g
+                  g
+                    path(fill='#bcbcbc' d='M29.193 15.515l-1.837 4.025-1.836-4.025-4.026-1.837 4.026-1.837 1.836-4.025 1.837 4.025 4.025 1.837zm-11.118 6.468l-2.443 5.373-2.442-5.373-5.374-2.443 5.374-2.442 2.442-5.374 2.443 5.374 5.373 2.442zM31.265 0l3.907 5.862H29.31L25.402 0h-3.908l3.908 5.862H19.54L15.632 0h-3.908l3.908 5.862H9.77L5.862 0H3.908C1.758 0 .02 1.759.02 3.908L0 27.356a3.92 3.92 0 0 0 3.908 3.908h31.265a3.92 3.92 0 0 0 3.908-3.908V0z')
+              span Perks      
+
+        .tab-content
+          #home.tab-pane.fade.in.active.show
+            .btn-group.dropleft
+              div(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                .dot
+                .dot
+                .dot
+              .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                a.dropdown-item.archive(href='#')
+                  <i class="far fa-heart mr-2"></i>
+                  | Archive
+                a.dropdown-item(href='#')
+                  <i class="fas fa-share-alt mr-2"></i>
+                  | Share
+                a.dropdown-item.playlist-tigger(href='#')
+                  <i class="fas fa-plus-circle mr-2"></i>
+                  | Playlist 
+                  ul.playlist
+                    li 
+                      label(for="one")
+                        <input type="checkbox" id="one" name="vehicle1" value="Bike">
+                        span Playlist One
+                    li 
+                      label(for="two")
+                        <input type="checkbox" id="two" name="vehicle1" value="Bike">
+                        span Playlist two
+                    li 
+                      label(for="three")
+                        <input type="checkbox" id="three" name="vehicle1" value="Bike">
+                        span Playlist three        
+
+            .video__description
+              .__category
+                span.d-inline-block.mr-1 Category:
+                a(href="#") Tag 1
+                a(href="#") Tag 1
+                a(href="#") Tag 1    
+              .__height
+                .title Lorem, ipsum.
+                  .date 05/11/2019
+                p.m-0  Proin sed arcu cursus, congue arcu id, suscipit lorem. Quisque non erat vitae ipsum pretium vestibulum. Nunc egestas lobortis tortor, at blandit felis ullamcorper non. Vestibulum arcu risus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi id quidem perspiciatis dolorum culpa blanditiis, maiores quasi consectetur voluptate magni expedita dolore reprehenderit, voluptatum, eaque beatae eius enim quo non. Fugit, saepe optio? Sunt obcaecati commodi quas ad repellat ut, repellendus quisquam deserunt id consequatur praesentium magni quibusdam aliquam.
+                .__category.active.mt-3
+                  span.d-inline-block.mr-1 Tags:
+                  a(href="#") #Tag 1
+                  a(href="#") #Tag 1
+                  a(href="#") #Tag 1 
+              .text-center
+                button.description-arrow
+                  <i class="far fa-angle-down"></i>
+            .author__views
+              .author.d-flex.align-items-center.justify-content-center.justify-content-sm-start
+                .img
+                  img(src="dist/images/video-author.png" alt="")
+                .text 
+                  a(href="#") Bob Martin
+              .views.d-flex.flex-column.align-items-sm-end.justify-content-center.align-items-center
+                .__view
+                  <i class="fas fa-eye"></i>
+                  span 12,500 Views
+                .__like
+                  button.__up 
+                    <i class="fas fa-thumbs-up"></i>
+                    | 12
+                  button.__down
+                    <i class="fas fa-thumbs-down"></i>
+                    | 0        
+          #menu1.tab-pane.fade 
+            .btn-group.dropleft
+              div(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                .dot
+                .dot
+                .dot
+              .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                a.dropdown-item.archive(href='#')
+                  <i class="far fa-heart mr-2"></i>
+                  | Archive
+                a.dropdown-item(href='#')
+                  <i class="fas fa-share-alt mr-2"></i>
+                  | Share
+                a.dropdown-item.playlist-tigger(href='#')
+                  <i class="fas fa-plus-circle mr-2"></i>
+                  | Playlist 
+                  ul.playlist
+                    li 
+                      label(for="one")
+                        <input type="checkbox" id="one" name="vehicle1" value="Bike">
+                        span Playlist One
+                    li 
+                      label(for="two")
+                        <input type="checkbox" id="two" name="vehicle1" value="Bike">
+                        span Playlist two
+                    li 
+                      label(for="three")
+                        <input type="checkbox" id="three" name="vehicle1" value="Bike">
+                        span Playlist three        
+
+            .video__description
+              .__height
+                //- .date 05/11/2019
+                p.m-0  Proin sed arcu cursus, congue arcu id, suscipit lorem. Quisque non erat vitae ipsum pretium vestibulum. Nunc egestas lobortis tortor, at blandit felis ullamcorper non. Vestibulum arcu risus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi id quidem perspiciatis dolorum culpa blanditiis, maiores quasi consectetur voluptate magni expedita dolore reprehenderit, voluptatum, eaque beatae eius enim quo non. Fugit, saepe optio? Sunt obcaecati commodi quas ad repellat ut, repellendus quisquam deserunt id consequatur praesentium magni quibusdam aliquam.
+              .text-center
+                button.description-arrow
+                  <i class="far fa-angle-down"></i>
+            .author__views
+              .author.d-flex.align-items-center.justify-content-center.justify-content-sm-start
+                .img
+                  img(src="dist/images/video-author.png" alt="")
+                .text 
+                  a(href="#") Bob Martin
+              .d-flex.flex-column.align-items-sm-end.justify-content-center.align-items-center     
+                .__suscribe.text-center.text-sm-right
+                  a.text-decoration-none.btn.mb-2.mb-md-0.follow(href="#" style="background: #448CCB")
+                    <i class="fas fa-bell mr-1"></i>
+                    span.d-md-inline-block Follow  
+                  a.text-decoration-none.btn.mb-2.mb-md-0.suscribe(href="#")
+                    <i class="fas fa-user-plus mr-1"></i>  
+                    span.d-md-inline-block Subscribe 
+  section.space.pb-0
+    .container
+      .row
+        .col-12
+          .section-heading.text-center.mb-4.mb-sm-5.pb-4
+            h2 Similar Videos
+            img(src="dist/images/section.png" alt="") 
+      .video-carsual
+        - for(var x=0; x<9; x++)
+          .item
+            .item-top
+              a.img.position-relative.d-block.text-decoration-none(href="#")
+                img.w-100.video-img(src="dist/images/video-car.png" alt="") 
+                img.play(src="dist/images/video-play-car.png" alt="")
+              .d-flex.align-items-center
+                .text.position-relative.w-100
+                  a.title(href="#") Lorem ipsum dolor 
+                  .date 01/11/2019
+                  .btn-group.dropleft
+                    div(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                      .dot
+                      .dot
+                      .dot
+                    .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                      a.dropdown-item.archive(href='#')
+                        <i class="far fa-heart mr-2"></i>
+                        | Archive
+                      a.dropdown-item(href='#')
+                        <i class="fas fa-share-alt mr-2"></i>
+                        | Share
+                      a.dropdown-item.playlist-tigger(href='#')
+                        <i class="fas fa-plus-circle mr-2"></i>
+                        | Playlist 
+                        ul.playlist(style="top: 0")
+                          li 
+                            label(for="one")
+                              <input type="checkbox" id="one" name="vehicle1" value="Bike">
+                              span Playlist One
+                          li 
+                            label(for="two")
+                              <input type="checkbox" id="two" name="vehicle1" value="Bike">
+                              span Playlist two
+                          li 
+                            label(for="three")
+                              <input type="checkbox" id="three" name="vehicle1" value="Bike">
+                              span Playlist three   
+            .item-bottom
+              .author__views.m-0
+                .author.d-flex.align-items-center.w-100
+                  .img
+                    img(src="dist/images/video-author.png" alt="")
+                  .text 
+                    a(href="#") Bob Martin
+                .views.d-flex.flex-column.align-items-end.justify-content-center
+                  .__view.border-0
+                    <i class="fas fa-eye"></i>
+                    span 12,500    
+  section
+    .container
+      .comments
+        .section-heading.text-center.mb-4.mb-sm-5.pb-4
+          h2 COMMENTS
+          img(src="dist/images/section.png" alt="") 
+        .comments__template
+          .row
+            .col-md-6.mb-4
+              .comment__count 4 Comments
+
+          form(action="")
+            ul
+              li
+                .d-grid.align-items-center
+                  .img
+                    img(src="dist/images/video-author.png" alt="")  
+                  .text
+                    .row
+                      .col-md-8.col-sm-6.mb-2.mb-sm-0
+                        a.title(href="#") Ali TUFAN
+                      .col-md-4.col-sm-6.mb-2.mb-sm-0.text-sm-right
+                        .date 
+                          <i class="far fa-calendar-alt mr-2"></i>
+                          | Jan 16, 2019 07:48 am
+                      .col-12.mt-2  
+                        p.m-0 Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. 
+                      .col-12.mt-3
+                        span.d-inline-block.__reply.commnet-button 
+                          <i class="far fa-angle-up mr-2"></i>
+                          | Reply
+                        span.d-inline-block.__up.commnet-button
+                          <i class="fas fa-thumbs-up mr-1"></i>
+                          | (3)  
+                        span.d-inline-block.__down.commnet-button
+                          <i class="fas fa-thumbs-down mr-1"></i>
+                          | (8)  
+              li
+                ul
+                  li
+                    .d-grid.align-items-center
+                      .img
+                        img(src="dist/images/video-author.png" alt="")  
+                      .text
+                        .row
+                          .col-md-8.col-sm-6.mb-2.mb-sm-0
+                            a.title(href="#") Ali TUFAN
+                          .col-md-4.col-sm-6.mb-2.mb-sm-0.text-sm-right
+                            .date 
+                              <i class="far fa-calendar-alt mr-2"></i>
+                              | Jan 16, 2019 07:48 am
+                          .col-12.mt-2  
+                            p.m-0 Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. 
+                          .col-12.mt-3
+                            span.d-inline-block.__reply.commnet-button 
+                              <i class="far fa-angle-up mr-2"></i>
+                              | Reply
+                            span.d-inline-block.__up.commnet-button
+                              <i class="fas fa-thumbs-up mr-1"></i>
+                              | (3)  
+                            span.d-inline-block.__down.commnet-button
+                              <i class="fas fa-thumbs-down mr-1"></i>
+                              | (8)  
+              li
+                .d-grid.align-items-center
+                  .img
+                    img(src="dist/images/video-author.png" alt="")  
+                  .text
+                    .row
+                      .col-md-8.col-sm-6.mb-2.mb-sm-0
+                        a.title(href="#") Ali TUFAN
+                      .col-md-4.col-sm-6.mb-2.mb-sm-0.text-sm-right
+                        .date 
+                          <i class="far fa-calendar-alt mr-2"></i>
+                          | Jan 16, 2019 07:48 am
+                      .col-12.mt-2  
+                        p.m-0 Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. 
+                      .col-12.mt-3
+                        span.d-inline-block.__reply.commnet-button 
+                          <i class="far fa-angle-up mr-2"></i>
+                          | Reply
+                        span.d-inline-block.__up.commnet-button
+                          <i class="fas fa-thumbs-up mr-1"></i>
+                          | (3)  
+                        span.d-inline-block.__down.commnet-button
+                          <i class="fas fa-thumbs-down mr-1"></i>
+                          | (8) 
+              li
+                .mx-auto.mt-5.mb-5(style="max-width: 194px;")
+                  a.button.btn.text-uppercase.d-flex.align-items-center.justify-content-center(href="#") See more                      
+              li
+                .d-grid.align-items-center.mb-0
+                  .img
+                    img(src="dist/images/video-author.png" alt="")  
+                  .textarea.position-relative
+                    textarea(placeholder="Here what I think...")
+                    .count 150/150
+                .text-right
+                  button(type="submit") Post Comment
+

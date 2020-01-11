@@ -1,0 +1,231 @@
+
+
+
+
+@media (max-width: 1199.98px) { 
+ 
+    .chat-op .box .text{
+        max-width: 75%;
+        padding: 8px 20px;
+    }
+    
+}
+
+@media (max-width: 991.98px) {
+    .chat-content .content .pic img{
+        max-width: 75px;
+    }
+    .chat-content .content .text {
+        padding-left: 65px;
+    }
+    .chat-content .content .text .par p{
+        font-size: 11px;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main-content{
+        padding-left: 120px;
+        margin-top: 90px;
+    }
+    .main-content{
+        overflow: visible;
+    }
+    .chat-content{
+        height: auto;
+    }
+    .l-responsive {
+        background-image: linear-gradient( #ff7e7e, #f36969);
+        max-width: 7rem;
+        text-align: center;
+        padding: 25px;
+        position: fixed;
+        top: 97px;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        z-index: 2;
+    }
+    .l-responsive img {
+        display: block;
+        width: 70px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .cname .c23 {
+        position: absolute;
+        bottom: -60px;
+        right: 0;
+    }
+    .left-bar {
+        position: fixed;
+        top: 89px;
+        left: -100%;
+        width: 90%;
+        min-height: 100%;
+        z-index: 9;
+        text-align: center;
+        opacity: 0;
+        transition: .4s;
+}
+    .left-bar.active {
+        left: 0;
+        opacity: 1;
+        min-height: inherit;
+        overflow: scroll;
+        height: 46rem;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        display: none;
+    }
+    .chat-op h5, .topic h5{
+        text-align: left;
+    }
+    .chat-op h5 span {
+        top: -10px;
+        right: 0;
+        width: 50%;
+    }
+    .chat-op h5 span img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px){
+    
+    .main-content{
+        padding-left: 65px;
+    }
+    .l-responsive{
+        max-width: 60px;
+        padding: 15px;
+    }
+    
+}
+
+@media (max-width: 575.98px) {
+    .top-area a {
+        max-width: 9rem;
+        padding: 7px 0px;
+        margin: 5px;
+    }
+    .top-area a.btn2 {
+        padding-bottom: 9px;
+        padding-top: 3px;
+    }
+    .top-area a.btn2 img{
+        width: 77%;
+    }
+    .chat-content{
+        padding: 10px;
+    }
+    .chat-content .content .pic img{
+        max-width: 40px;
+    }
+    .chat-content .content .text{
+        padding-left: 25px;
+    }
+    .chat-content .content .text h5{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .chat-content .content .text .par {
+        padding: 10px 0px;
+        padding-left: 19px;
+    }
+    .d12 h6{
+        font-size: 11px;
+    }
+    .d12 span{
+        font-size: 14px;
+    }
+    .d12{
+        top: 8px;
+    }
+    .chat-content .content .text h5 span {
+        top: 8px;
+        left: 95px;
+        width: 30px;
+    }
+    .chat-content .content .text h5 .mod {
+        left: 135px;
+        top: 15px;
+    }
+    .photo img{
+        max-width: 100%;
+    }
+    .chat-content .text1 p{
+        font-size: 10px;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 460px){
+    .top-area a {
+    max-width: 6rem;
+    padding: 4px 0px;
+    margin: 5px;
+}
+    .top-area a img{
+        width: 70%;
+    }
+    .top-area a.btn2 {
+    padding-bottom: 4px;
+    padding-top: 0px;
+}
+    .top-area a.btn2 img{
+        width: 82%;
+    }
+    .top-area .menu ul li a{
+        font-size: 12px;
+    }
+    .cname button{
+        font-size: 10px;
+    }
+    .chat-content{
+        position: relative;
+        overflow: visible;
+    }
+     .chat-content h4 {
+    position: absolute;
+    top: -50px;
+    font-size: 16px;
+}
+    .chat-content .content .text .par p{
+        font-size: 10px;
+        padding-right: 2px;
+    }
+    .type-box .plus {
+        left: 12px;
+        font-size: 7px;
+    }
+    .type-box .count {
+        left: 20px;
+    bottom: -15px;
+    font-size: 10px;
+}
+    .type-box textarea {
+    height: 27px;
+    width: 83%;
+    padding: 7px;
+    font-size: 10px;
+}
+    .type-box input{
+        font-size: 12px;
+        width: 70px;
+    }
+    .type-box img{
+        width: 10px;
+    }
+    .type-box{
+        padding: 20px 10px;
+    }
+}

@@ -1,0 +1,33 @@
+.eror-content-box {
+    padding: 40px 0;
+    .eror-text {
+        font-size: 40px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        color: #000000;
+        padding-bottom: 50px;
+    }
+    .eror-header-logo {
+        padding-bottom: 20px;
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+@media (max-width:768px) {
+    .eror-text {
+        font-size: 27px !important;
+        padding-bottom: 30px !important;
+    }
+    .eror-header-logo {
+        width: 350px !important;
+    }
+}
+@media (max-width:576px) {
+    .eror-text {
+        font-size: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .eror-header-logo {
+        width: 250px !important;
+    }
+}

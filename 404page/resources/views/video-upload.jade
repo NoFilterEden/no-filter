@@ -1,0 +1,27 @@
+extends layouts/app.jade
+
+block title
+  title Video Upload
+
+block main
+  main.space
+    .container
+      .row
+        .col-12
+          h3.aside-heading Video upload Panel
+      .row
+        +sidebar()
+        .col-lg-8.col-md-7
+          .video-upload.position-relative.b-shadow 
+            form(action="#")
+              .upload
+                label(for="upload").d-flex.flex-column.justify-content-center.align-items-center
+                  input(id="upload" type="file" name="")
+                  i.fas.fa-cloud-upload-alt
+                  p.mb-0 Click here to upload
+          .progress
+            .progress-bar.w-75(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+          .navigation
+            a.text-decoration-none(href="#") Prev
+            a.text-decoration-none(href="#") NEXT
+

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build Pro/Home</title>
+    <link href="images/9.png" rel="shortcut icon" type="image/png">
+    <!-- css link -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- responsive css -->
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header area -->
+    <header class="main-header bg-white logged-in">
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-lg p-0 align-items-center"><a class="navbar-brand px-3" href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="dropdown search-tigger d-flex d-lg-none align-items-center mobile-serach-tigger justify-content-end">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <form class="d-flex" action="#">
+                            <input type="text" placeholder="Search Here">
+                        </form>
+                    </div>
+                    <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"> </i></button>
+                </div>
+                <div class="notification d-block d-lg-none ml-auto"><i class="fas fa-bell"> </i>
+                    <div class="number">2</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="bar1 bar"></div>
+                    <div class="bar2 bar"></div>
+                    <div class="bar3 bar"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: none;">
+                    <div class="order-menu">
+                        <button class="close d-lg-none d-flex align-items-center justify-content-center" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-times"></i></button>
+                        <ul class="navbar-nav ml-lg-auto toggle-nav-bar">
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Home </a></li>
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Rising</a></li>
+                            <li class="nav-item active"><a class="nav-link px-0" href="#">Feed
+                                    <div class="number">2</div></a></li>
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Updates
+                                    <div class="number">99+</div></a></li>
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Records </a></li>
+                        </ul>
+                        <div class="dropdown search-tigger d-none d-lg-flex align-items-center">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form class="d-flex" action="#">
+                                    <input type="text" placeholder="Search Here">
+                                </form>
+                            </div>
+                        </div>
+                        <button class="d-none d-lg-block" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"> </i></button>
+                        <div class="notification d-none d-lg-block"><i class="fas fa-bell"></i>
+                            <div class="number">2</div>
+                        </div>
+                        <ul class="menu-author navbar-nav order-1">
+                            <li class="nav-item dropdown bg-pink mr-0 d-flex flex-wrap align-items-center"><a class="profile-pic" href="#"><img src="images/cre.png" alt=""></a><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="ml-2">David Richardson</span></a>
+                                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown"><a class="dropdown-item active" href="#"><i class="far fa-user"></i>Profile</a><a class="dropdown-item" href="#"> <i class="fas fa-star"></i>Channel</a><a class="dropdown-item" href="#">
+                                        <i class="fas fa-sign-out-alt"></i>Sign Out</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- end header area -->
+
+
+
+    <!-- main content -->
+    <section class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 colm">
+                   <div class="overlay"></div>
+                     <!-- left bar -->
+                    <div class="left-bar">
+                        <div class="l23">
+                            <!-- user -->
+                            <div class="user">
+                                <img src="images/1.PNG" alt="" class="profile-pic">
+                                <img src="images/2.PNG" alt="" class="online">
+                                <h4>David Mason</h4>
+                            </div>
+                            <!-- end user -->
+                            <!-- users list -->
+                            <div class="users-list">
+                                <h5><span></span> 127 Online</h5>
+                                <ul>
+                                    <li><a href="#">1. Moderator Name</a></li>
+                                    <li><a href="#">2. Moderator Name</a></li>
+                                    <li><a href="#">3. Moderator Name</a></li>
+                                    <li class="h11"><a href="#">4. Moderator Name</a></li>
+                                    <li class="h11"><a href="#">5. Moderator Name</a></li>
+                                    <li class="h11"><a href="#">6. Moderator Name</a></li>
+                                    <li class="h11"><a href="#">7. Moderator Name</a></li>
+                                    <li class="h11"><a href="#">8. Moderator Name</a></li>
+                                </ul>
+                                <div class="more">
+                                    <p>5 More... <span><i class="fas fa-chevron-down"></i></span></p>
+                                </div>
+                            </div>
+                            <!-- end users list -->
+                            <!-- chat op -->
+                            <div class="chat-op">
+                                <h5>4/5 Chats <span><img src="images/4.PNG" alt=""></span></h5>
+                                <!-- box -->
+                                <div class="box">
+                                    <span class="del"><img src="images/3.PNG" alt=""></span>
+                                    <div class="text text4">
+                                        <h6> get credit <span><i class="fas fa-angle-down"></i></span></h6>
+                                    </div>
+                                    <span class="eye q3"><i class="fas fa-eye"></i></span>
+                                    <span class="eye e1 w3"><i class="fas fa-eye-slash"></i></span>
+                                    
+                                </div>
+                                <!-- end box -->
+                                <div class="dropdwn drop4">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Public</p>
+                                            </td>
+                                            <td><span><i class="fas fa-angle-right"></i></span></td>
+                                            <td>
+                                                <p>52</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- box -->
+                                <div class="box">
+                                    <span class="del"><img src="images/3.PNG" alt=""></span>
+                                    <div class="text tex1">
+                                        <h6> get credit <span><i class="fas fa-angle-down"></i></span></h6>
+                                    </div>
+                                    <span class="eye q4"><i class="fas fa-eye"></i></span>
+                                    <span class="eye e1 w4"><i class="fas fa-eye-slash"></i></span>
+                                </div>
+                                <!-- end box -->
+                                <div class="dropdwn drop3">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Public</p>
+                                            </td>
+                                            <td><span><i class="fas fa-angle-right"></i></span></td>
+                                            <td>
+                                                <p>52</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- box -->
+                                <div class="box box1">
+                                    <span class="del"><img src="images/3.PNG" alt=""></span>
+                                    <div class="text tex2">
+                                        <h6> get credit <span class="down1 down"><i class="fas fa-angle-down"></i></span><span class="down1 up"><i class="fas fa-angle-up"></i></span></h6>
+                                    </div>
+                                    <span class="eye q1"><i class="fas fa-eye"></i></span>
+                                    <span class="eye e1 w1"><i class="fas fa-eye-slash"></i></span>
+                                </div>
+                                <!-- end box -->
+                                <div class="dropdwn drop1">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Public</p>
+                                            </td>
+                                            <td><span><i class="fas fa-angle-right"></i></span></td>
+                                            <td>
+                                                <p>52</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- box -->
+                                <div class="box box2">
+                                    <span class="del"><img src="images/3.PNG" alt=""></span>
+                                    <div class="text text3">
+                                        <h6> get credit <span class="down2"><i class="fas fa-angle-down"></i></span><span class="down2 up"><i class="fas fa-angle-up"></i></span></h6>
+                                    </div>
+                                    <span class="eye q2"><i class="fas fa-eye"></i></span>
+                                    <span class="eye e1 w2"><i class="fas fa-eye-slash"></i></span>
+                                </div>
+                                <!-- end box -->
+                                <div class="dropdwn drop2">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <p>Public</p>
+                                            </td>
+                                            <td><span><i class="fas fa-angle-right"></i></span></td>
+                                            <td>
+                                                <p>52</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- end chat op -->
+                            <!-- topic -->
+                            <div class="topic">
+                                <div class="headline" style="position: relative;">
+                                    <div class="buttons">
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span><i class="fas fa-times"></i></span>
+                                    </div>
+                                    <h5>Topic <span><img src="images/10.JPG" alt=""></span></h5>
+                                </div>
+                                <div class="text">
+                                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis orci ut tellus euismod cursus quis eget est. Pellentesque aliquam odio at fringilla pharetra. </P>
+                                    <textarea name="edit_text" placeholder="Edit Topic / Add Topic"></textarea>
+
+                                </div>
+                            </div>
+                            <!-- end topic -->
+                        </div>
+                    </div>
+                    <!-- end left bar -->
+                    <!-- left bar responsive -->
+                    <div class="l-responsive d-block d-lg-none d-md-none">
+                        <img src="images/1.PNG" alt="">
+                        <img src="images/2.PNG" alt="">
+                        <img src="images/8.JPG" alt="">
+                        <img src="images/9.JPG" alt="">
+                    </div>
+                    <!-- end left bar responsive -->
+                </div>
+                <div class="col-md-9 col-l">
+                    <!-- right bar -->
+                    <div class="right-bar">
+                        <!-- top area -->
+                        <div class="top-area">
+                            <div class="buttons">
+                                <a href="#" class="btn">
+                                    <img src="images/7.PNG" alt="">
+                                </a>
+                                <a href="#" class="btn btn2">
+                                    <img src="images/6.PNG" alt="">
+                                </a>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">Videos</a></li>
+                                    <li><a href="#">Exclusive</a></li>
+                                    <li class="active"><a href="#">Chat</a></li>
+                                </ul>
+                            </div>
+                            <div class="cname">
+                                <div class="c23">
+                                    <button>Chat Name <span><i class="fas fa-angle-down"></i></span></button>
+                                    <ul>
+                                        <li>Get Credit</li>
+                                        <li>Get Credit</li>
+                                        <li>Get Credit</li>
+                                        <li>Get Credit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end top area -->
+                        <!-- chat content -->
+                        <div class="chat-content">
+                            <div class="text-center">
+                                <h4>100+ new messages</h4>
+                            </div>
+                            <!-- box -->
+                            <div class="box">
+                                <!-- content -->
+                                <div class="content">
+                                    <div class="pic">
+                                        <img src="images/1.JPG" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h5>User Name</h5>
+                                        <div class="d12">
+                                            <h6>12/12/2019</h6>
+                                            <span class="dot1"><i class="fas fa-ellipsis-h"></i></span>
+                                            <div class="a12 a1"></div>
+                                            <ul class="d1">
+                                                <li><a href="#">Message</a></li>
+                                                <li><a href="#">Recruit as Moderator</a></li>
+                                                <li><a href="#">Chat Ban (1 day)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="par">
+                                            <img src="images/8.PNG" alt="">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis orci ut tellus euismod cursus quis eget est. Pellentesque aliquam odio at fringilla pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis orci ut tellus euismod cursus quis eget est. Pellentesque aliquam odio at fringilla pharetra. </p>
+                                        </div>
+                                        <div class="photo">
+                                            <img src="images/5.JPG" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                                <!-- content -->
+                                <div class="content">
+                                    <div class="pic">
+                                        <img src="images/1.JPG" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h5>User Name <span><img src="images/9.PNG" alt=""></span></h5>
+                                        <div class="d12">
+                                            <h6>12/12/2019</h6>
+                                            <span><i class="fas fa-ellipsis-h"></i></span>
+                                        </div>
+                                        <div class="par">
+                                            <img src="images/8.PNG" alt="">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis orci ut tellus euismod cursus quis eget est. Pellentesque aliquam odio at fringilla pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis orci ut tellus euismod cursus quis eget est. Pellentesque aliquam odio at fringilla pharetra. </p>
+                                        </div>
+                                    </div>
+                                    <div class="photo">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="images/6.JPG" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="images/7.JPG" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                                <div class="text1 text-right">
+                                    <p>User has been chat banned by Moderator(1 day)
+                                        <span>User is now a Moderator!</span>
+                                        User is no longer Moderator</p>
+                                </div>
+                            </div>
+                            <!-- end box -->
+                        </div>
+                        <!-- end chat content -->
+                        <!-- type box -->
+                        <div class="type-box">
+                            <form method="post">
+                                <span class="plus"><i class="fas fa-plus"></i></span>
+                                <span class="count" id="max"></span><span class="count"> /100</span>
+                                <textarea maxlength="100" id="te11" placeholder="Type something..."></textarea>
+                                <input type="submit" value="Send" />
+                                <img src="images/2.JPG" alt="">
+                            </form>
+                        </div>
+                        <!-- end type box -->
+                    </div>
+                    <!-- end right bar -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main content -->
+
+
+
+
+
+
+    <!-- js link -->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script>
+        window.onload = function() {
+            scrolly();
+        };
+
+    </script>
+</body>
+
+</html>

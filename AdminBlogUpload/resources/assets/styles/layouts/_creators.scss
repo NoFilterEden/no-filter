@@ -1,0 +1,12 @@
+.carosual {
+  max-width: 977px;
+  position: static;
+  padding: 30px 0;
+  .item {
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+  }
+}
