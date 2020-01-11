@@ -362,8 +362,7 @@ $(".limited-textarea").each(function () {
     $textarea.limiter($counter);
 });
 
-
-
+/*
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 }), $('[data-toggle="slide-collapse"]').on("click", function () {
@@ -382,5 +381,5 @@ $(function () {
 }), $(".archive").click(function () {
     $(this).toggleClass("show")
 });
-
+*/
 //chat.html jquery
