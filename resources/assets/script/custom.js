@@ -105,6 +105,107 @@ $(".archive").click(function() {
 
 
 
+// Jquery for following , cool-channels , creator profile 
+// Don't remove this
+// -----------
+// -----------
+
+$(function () {
+    $(".singel-video-post").slice(0, 4).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".singel-video-post:hidden").slice(0, 4).slideDown();
+        if ($(".singel-video-post:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
+});
+
+
+$(function () {
+    $(".singel-chann").slice(0, 6).show();
+    $("#loadMore0").on('click', function (e) {
+        e.preventDefault();
+        $(".singel-chann:hidden").slice(0, 3).slideDown();
+        if ($(".singel-chann:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
+});
+
+$(function () {
+    $(".sin-vid-po").slice(0, 6).show();
+    $("#loadMore1").on('click', function (e) {
+        e.preventDefault();
+        $(".sin-vid-po:hidden").slice(0, 3).slideDown();
+        if ($(".sin-vid-po:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
+});
+
+$(function () {
+    $(".plist-video-post").slice(0, 6).show();
+    $("#loadMore2").on('click', function (e) {
+        e.preventDefault();
+        $(".plist-video-post:hidden").slice(0, 3).slideDown();
+        if ($(".plist-video-post:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
+});
+
+
+$(function () {
+    $(".following").click(function(){
+    $(this).css("z-index", "-9");
+  });
+});
+
+$(function () {
+    $(".subscribing").click(function(){
+    $(this).css("z-index", "-9");
+  });
+});
+
+$(function () {
+    $("#followBtn").click(function(){
+    $(".follow-text").html("FOLLOWING");
+    $( "#plusfollow" ).removeClass( "fa-bell" ).addClass( "fa-check" );
+  });
+});
+
+$(function () {
+    $("#subscribeBtn").click(function(){
+    $(".subs-text").html("SUBSCRIBED");
+    $( "#plus1" ).removeClass( "fa-user-plus" ).addClass( "fa-check" );
+  });
+});
+
+$(function(){
+    $(".cra-list").click(function(){
+        $(".create-list").show();
+    });
+    $(".clos , .ook").click(function(){
+        $(".create-list").hide();
+    });
+});
+
+
+$(document).mouseup(function(e){
+    var element = $(".create-list");
+
+    // If the target of the click isn't the element
+    if(!element.is(e.target) && element.has(e.target).length === 0){
+        element.hide();
+    }
+});
+// -----------
+// -----------
+// Jquery for following , cool-channels , creator profile 
+
+
+
 //chat.html jquery
 
 $('.dropdown-submenu a.test').on("click", function(e){
