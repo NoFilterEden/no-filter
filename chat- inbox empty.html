@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
     <style>
       .row2{
-        background-color: #f8898d;
+        background-color: #fc7b7b;
         color: white;
       }
       .row2 h4{
@@ -30,6 +30,25 @@
           font-family: 'Josefin Sans', sans-serif;
           text-transform: none;
           font-weight: bold;
+      }
+      .pay-goback-btn {
+        padding: 8px 35px 8px 15px;
+        background: -webkit-gradient(linear, left top, right top, from(#fd8b8b), to(#f9a1a1));
+        background: linear-gradient(90deg, #fd8b8b, #f9a1a1);
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 20px;
+        text-decoration: none;
+        -webkit-transition: backgroud 0.3s;
+        transition: backgroud 0.3s;
+      }
+      .pay-goback-btn:hover {
+        background: #ef3e33;
+        color: white;
+      }
+      .pay-goback-btn i {
+          padding-right: 20px;
       }
     </style>
   </head>
@@ -92,12 +111,17 @@
         <section class="creators space">
           <div class="container-fluid">
             <div class="row">
+              <div class="col-md-5 col-6">
+                  <a href="#" class="pay-goback-btn"><i class="fa fa-angle-left" aria-disabled="true"></i>Go Back</a>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-12">
                 <div class="row">
                   <div class="col-md-6 mx-auto">
                     <div class="row row2 py-2 px-4">
                       <div class="col-md-1 col-2 my-auto">
-                        <img src="dist/images/dp.png" style="min-width: 38px;" class="img-fluid" alt="">
+                        <img src="dist/images/1.png" style="min-width: 38px;" class="img-fluid" alt="">
                       </div>
                       <div class="col-md-11 col-10 my-auto">
                           <h4>Name</h4>
@@ -105,7 +129,7 @@
                     </div>
                     <div class="row bg-white text-center py-5">
                       <div class="col-md-12">
-                        <h2 class="jos">You have not received a message from the creator. </h2>
+                        <h2 class="jos">You have not received any messages for the Creator or Moderator </h2>
                         <h2 class="jos">You cannot send messages. </h2>
                         <img src="dist/images/inbox.png" class="img-fluid" alt="">
                       </div>
