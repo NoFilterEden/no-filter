@@ -33,7 +33,7 @@
           background-color: #f8898d;
           border-color: #f8898d;
         }
-        .c_box .btn:hover{
+        .c_box .btn:hover,.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
           background-color: #ef3e33;
           border-color: #ef3e33;
         }
@@ -103,10 +103,10 @@
                 <form>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="First Name" required>
+                      <input type="text" class="form-control" id="inputEmail4" placeholder="First Name *" required>
                     </div>
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name" required>
+                      <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name *" required>
                     </div>
                   </div>
                   <div class="form-row">
@@ -115,7 +115,7 @@
                     </div>
                     <div class="form-group col-md-6">
                       <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Reason for Contacting</option>
+                        <option selected>Reason for Contacting *</option>
                         <option value="1">Dmca / Copyright</option>
                         <option value="2">Business Inquiry</option>
                         <option value="3">Comment</option>
@@ -127,7 +127,7 @@
                     <input type="email" class="form-control" id="inputAddress" placeholder="Email" required>
                   </div>
                   <div class="form-group">
-                    <label for="exampleFormControlTextarea1" class="ml-3">Comment</label>
+                    <label for="exampleFormControlTextarea1" class="ml-3">Comment *</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <div class="text-center">

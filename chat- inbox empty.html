@@ -15,37 +15,26 @@
     <!--if lt IE 9-->
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
     <style>
-        .c_box h2{
-          color: #ef3e33;
+      .row2{
+        background-color: #f8898d;
+        color: white;
+      }
+      .row2 h4{
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 0px;
+      }
+      .jos {
+          font-family: 'Josefin Sans', sans-serif;
+          text-transform: none;
           font-weight: bold;
-        }
-        .c_box .col-md-8{
-          background-color: white;
-          padding: 20px 50px;
-          border-radius: 10px;
-        }
-        .c_box .form-control:focus, .c_box .custom-select:focus {
-          border-color: #f8898d;
-          box-shadow: 0 0 0 0.1px rgba(248, 137, 141, 0.55);
-        }
-        .c_box .btn{
-          background-color: #f8898d;
-          border-color: #f8898d;
-        }
-        .c_box .btn:hover,.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-          background-color: #ef3e33;
-          border-color: #ef3e33;
-        }
-        .c_box h3{
-          font-family: 'Varela Round', sans-serif;
-          text-transform: uppercase;
-          color: #f8898d;
-        }
+      }
     </style>
   </head>
-  <body class="contact">
-    <div class="main-wraper d-block">
+  <body>
+    <div id="chat" class="main-wraper d-block">
       <header class="main-header bg-white logged-in">
         <div class="container-fluid px-0">
           <nav class="navbar navbar-expand-lg p-0 align-items-center"><a class="navbar-brand px-3" href="index.html"><img src="dist/images/logo.png" alt=""></a>
@@ -72,9 +61,9 @@
                   <li class="nav-item active"><a class="nav-link px-0" href="#">Home </a></li>
                   <li class="nav-item"><a class="nav-link px-0" href="#">Rising</a></li>
                   <li class="nav-item"><a class="nav-link px-0" href="#">Feed
-                      <div class="number">2</div></a></li>
+                      
                   <li class="nav-item active"><a class="nav-link px-0" href="#">Updates
-                      <div class="number">99+</div></a></li>
+                      
                   <li class="nav-item"><a class="nav-link px-0" href="#">Records      </a></li>
                 </ul>
                 <div class="dropdown search-tigger d-none d-lg-flex align-items-center">
@@ -86,7 +75,7 @@
                 </div>
                 <button class="d-none d-lg-block" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"> </i></button>
                 <div class="notification d-none d-lg-block"><i class="fas fa-bell"></i>
-                  <div class="number">2</div>
+                  
                 </div>
                 <ul class="menu-author navbar-nav order-1">
                   <li class="nav-item dropdown bg-pink mr-0 d-flex flex-wrap align-items-center"><a class="profile-pic" href="#"><img src="dist/images/cre.png" alt=""></a><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="ml-2">David Richardson</span></a>
@@ -100,67 +89,35 @@
         </div>
       </header>
       <main>
-        <section class="creators space mt-5 c_box">
-          <div class="container pt-5">
-            <div class="row px-3">
-              <div class="col-md-8 mx-auto">
-                <h2 class="text-center pb-2">Contact Us</h2>
-                <form>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="First Name" required>
+        <section class="creators space">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-6 mx-auto">
+                    <div class="row row2 py-2 px-4">
+                      <div class="col-md-1 col-2 my-auto">
+                        <img src="dist/images/dp.png" style="min-width: 38px;" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-md-11 col-10 my-auto">
+                          <h4>Name</h4>
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name" required>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="Business Name" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Reason for Contacting</option>
-                        <option value="1">Dmca / Copyright</option>
-                        <option value="2">Business Inquiry</option>
-                        <option value="3">Comment</option>
-                        <option value="3">Question</option>
-                      </select>
+                    <div class="row bg-white text-center py-5">
+                      <div class="col-md-12">
+                        <h2 class="jos">You have not received a message from the creator. </h2>
+                        <h2 class="jos">You cannot send messages. </h2>
+                        <img src="dist/images/inbox.png" class="img-fluid" alt="">
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="inputAddress" placeholder="Email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1" class="ml-3">Comment</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary px-5 ">Submit</button>
-                  </div>
-                </form>
+                </div>
               </div>
             </div>
-          
           </div>
-        </section>
-
-      <!-- Modal -->
-      <div class="modal fade show c_box" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" style="display: block; padding-right: 17px;" aria-modal="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-body text-center">
-              <img src="dist/images/contactsuccess.png" class="img-fluid" alt="">
-              <h3>Form Submitted Successfully</h3>
-              <button type="submit" class="btn btn-primary px-4 ">OK</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-backdrop fade show"></div>
-        
+        </section>  
       </main>
-      <footer class="main-footer">
+        <footer class="main-footer">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-sm-6 col-12">
