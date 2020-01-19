@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <title>Post page two</title>
+  <!-- Bootstrap-->
+  <!--link(href='dist/fonts/fontawesome/css/all.css' rel='stylesheet')-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+  <link href="dist/styles/style.css" rel="stylesheet">
+  <link href="dist/styles/extra.css" rel="stylesheet">
+  <!--if lt IE 9-->
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+  <div class="main-wraper">
+    <header class="main-header bg-white logged-in">
+      <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg p-0 align-items-center"><a class="navbar-brand px-3" href="index.html"><img
+              src="dist/images/logo.png" alt=""></a>
+          <div
+            class="dropdown search-tigger d-flex d-lg-none align-items-center mobile-serach-tigger justify-content-end">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <form class="d-flex" action="#">
+                <input type="text" placeholder="Search Here">
+              </form>
+            </div>
+            <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><i class="fas fa-search"> </i></button>
+          </div>
+          <div class="notification d-block d-lg-none ml-auto">
+              <i class="fas fa-bell header-notify-btn"></i>
+              <div class="notification-menu">
+                <h2 class="notification-menu-ttl">Notifications (10+)</h2>
+                <div class="main-notify-menu" data-simplebar data-simplebar-auto-hide="false">
+                  <ul>
+                    <li><a href="#"><img src="dist/images/notify-win.png" alt="">Molly Won!</a></li>
+                    <li><a href="#"><img src="dist/images/notify-upload.png" alt="">Creator Uploaded</a></li>
+                    <li><a href="#"><img src="dist/images/notify-new.png" alt="">New Creator</a></li>
+                    <li><a href="#"><img src="dist/images/notify-add-friend.png" alt="">Subscribed To Creator</a></li>
+                    <li><a href="#" style="color: #ef3e33;"><img src="dist/images/notify-unfriend.png" alt="">Unubscribed <br> <span>From Creator</span></a></li>
+
+                    <li><a href="#"><i class="fas fa-edit"></i>Username <br> <span>Created a Post</span></a></li>
+                    <li><a href="#"><i class="fas fa-clipboard"></i>Username <br> <span>Created a Poll</span></a></li>
+                    <li><a href="#"><i class="fas fa-gift"></i>Username <br> <span>Created a Giveaway</span></a></li>
+                    <li><a href="#"><img src="dist/images/notify-like.png" alt="">Username <br> <span>Liked Your Comment</span></a></li>
+                    <li><a href="#"><span class="mod">Mod</span>Username <br> <span>Made You a Mod</span></a></li>
+                    <li><a href="#"><img src="dist/images/notify-comment.png" alt="">Username Replied<br> <span> to Your Comment</span></a></li>
+
+                    <li><a href="#" style="color: #ef3e33;"><img src="dist/images/notify-extra.png" alt="">You have been<br> <span> chat ban(5 hours)</span></a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="slide-collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="bar1 bar"></div>
+            <div class="bar2 bar"></div>
+            <div class="bar3 bar"></div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="order-menu">
+              <button class="close d-lg-none d-flex align-items-center justify-content-center" type="button"
+                data-toggle="slide-collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                  class="fas fa-times"></i></button>
+              <ul class="navbar-nav ml-lg-auto toggle-nav-bar">
+                <li class="nav-item"><a class="nav-link px-0" href="index.html">Home </a></li>
+                <li class="nav-item"><a class="nav-link px-0" href="rising.html">Rising</a></li>
+                <li class="nav-item active"><a class="nav-link px-0" href="#">Feed</a></li>
+                <li class="nav-item"><a class="nav-link px-0" href="#">Updates</a></li>
+                <li class="nav-item"><a class="nav-link px-0" href="records.html">Records </a></li>
+              </ul>
+              <div class="dropdown search-tigger d-none d-lg-flex align-items-center">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <form class="d-flex" action="#">
+                    <input type="text" placeholder="Search Here">
+                  </form>
+                </div>
+              </div>
+              <button class="d-none d-lg-block" id="dropdownMenuButton" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"> </i></button>
+              <div class="notification d-none d-lg-block">
+                  <i class="fas fa-bell header-notify-btn"></i>
+                  <div class="notification-menu">
+                    <h2 class="notification-menu-ttl">Notifications (10+)</h2>
+                    <div class="main-notify-menu" data-simplebar data-simplebar-auto-hide="false">
+                      <ul>
+                        <li><a href="#"><img src="dist/images/notify-win.png" alt="">Molly Won!</a></li>
+                        <li><a href="#"><img src="dist/images/notify-upload.png" alt="">Creator Uploaded</a></li>
+                        <li><a href="#"><img src="dist/images/notify-new.png" alt="">New Creator</a></li>
+                        <li><a href="#"><img src="dist/images/notify-add-friend.png" alt="">Subscribed To Creator</a></li>
+                        <li><a href="#" style="color: #ef3e33;"><img src="dist/images/notify-unfriend.png" alt="">Unubscribed <br> <span>From Creator</span></a></li>
+    
+                        <li><a href="#"><i class="fas fa-edit"></i>Username <br> <span>Created a Post</span></a></li>
+                        <li><a href="#"><i class="fas fa-clipboard"></i>Username <br> <span>Created a Poll</span></a></li>
+                        <li><a href="#"><i class="fas fa-gift"></i>Username <br> <span>Created a Giveaway</span></a></li>
+                        <li><a href="#"><img src="dist/images/notify-like.png" alt="">Username <br> <span>Liked Your Comment</span></a></li>
+                        <li><a href="#"><span class="mod">Mod</span>Username <br> <span>Made You a Mod</span></a></li>
+                        <li><a href="#"><img src="dist/images/notify-comment.png" alt="">Username Replied<br> <span> to Your Comment</span></a></li>
+    
+                        <li><a href="#" style="color: #ef3e33;"><img src="dist/images/notify-extra.png" alt="">You have been<br> <span> chat ban(5 hours)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              <ul class="menu-author navbar-nav order-1">
+                <li class="nav-item dropdown bg-pink mr-0 d-flex flex-wrap align-items-center"><a class="profile-pic"
+                    href="#"><img src="dist/images/cre.png" alt=""></a><a class="dropdown-toggle" href="#" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="ml-2">David
+                      Richardson</span></a>
+                  <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown"><a class="dropdown-item active"
+                      href="#"><i class="far fa-user"></i>Profile</a><a class="dropdown-item" href="#"> <i
+                        class="fas fa-star"></i>Channel</a><a class="dropdown-item" href="#">
+                      <i class="fas fa-sign-out-alt"></i>Sign Out</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <!-- -------------Start Post page design here------------- -->
+    <section class="post-section">
+        <a href="#" class="post-goback-btn"><i class="far fa-angle-left" aria-disabled="true"></i>Go Back</a>
+        <div class="container extra-pd-0">
+            <div class="main-post-section">
+                <!-- -----Post header----- -->
+                <div class="post-header">
+                    <div class="row">
+                        <div class="col-6">
+                          <div class="post-pro-image">
+                            <img src="dist/images/cre.png" alt="Profile Picture">
+                          </div>
+                          <h4 class="post-ttl">David Jhons</h4>
+                        </div>
+                        <div class="col-6 text-right">
+                            <div class="post-header-right">
+                              <p class="post-time"><i class="far fa-calendar-alt"></i>Jan 16, 2019 7:48 am</p>
+                                <i class="fas fa-ellipsis-v post-top-menu-btn"></i>
+                                <div class="post-header-menu">
+                                  <ul>
+                                    <li><a href="#">Copy Link</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Share to...</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----Post top description---- -->
+                <div class="post-top-dis">
+                  <h2 class="post-main-ttl">Title goes here</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aspernatur voluptate ex assumenda perferendis excepturi vero eos adipisci, voluptatum tempore dignissimos, rem laboriosam soluta voluptates!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aspernatur voluptate ex assumenda perferendis excepturi vero eos adipisci, voluptatum tempore dignissimos, rem laboriosam soluta voluptates!</p>
+                </div>
+                <!-- ------Post videos------ -->
+                <div class="post-main-videos">
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <div class="single-video-link">
+                                <a href="#">
+                                    <img src="dist/images/post-bg4.png" alt="Video Loading">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <div class="single-video-link">
+                                <a href="#">
+                                    <img src="dist/images/post-bg2.png" alt="Video Loading">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="single-video-link">
+                                <a href="#">
+                                    <img src="dist/images/post-bg3.png" alt="Video Loading">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="video-frame position-relative mt-4" style="box-shadow: none;">
+                                <video id="player" poster="dist/images/thumbnail.png" playsinline="" controls="">
+                                    <source src="dist/images/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------Post videos ends------ -->
+                <!-- ------Post bottom description------ -->
+                <div class="post-bottom-dis">
+                    <div class="post-video-result">
+                        <div class="row">
+                            <div class="col-4 text-right">
+                                <div class="post-comment-count post-result-count">
+                                    <i class="far fa-comment"></i>
+                                    <p>10</p>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span class="d-inline-block __up commnet-button" style="cursor: pointer;">
+                              <i class="fas fa-thumbs-up mr-1"></i>1000</span>
+                            </div>
+                            <div class="col-4 text-left">
+                                <span class="d-inline-block __down commnet-button" style="cursor: pointer;">
+                              <i class="fas fa-thumbs-down mr-1"></i>8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -----Post survey----- -->
+                    <div class="post-survey">
+                        <div class="post-progress-bar">
+                          <div class="ppb-done" style="width: 70%; background: #fe303a; animation: post-progress 15s;"></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-7">
+                            <h3 class="post-survey-ttl" style="color: #e21d1d">Hurry Up! 2 hours remaining.</h3>
+                          </div>
+                          <div class="col-md-5 text-right">
+                            <a href="#" class="btn post-survey-brn">Enter Giveaway</a>
+                            <a href="#" class="btn post-terms-brn">Terms and Conditions</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------Finish Post page design here------------- -->
+
+
+    <!-- -------------Finish Post Comment design here------------- -->
+    <section>
+        <div class="container extra-pd-0">
+          <div class="comments post-page-comment">
+            <div class="section-heading text-center mb-4 mb-sm-5 pb-4">
+              <h2>COMMENTS</h2>
+            </div>
+            <div class="comments__template">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="comment__count">4 Comments</div>
+                </div>
+              </div>
+              <form action="">
+                <ul>
+                  <li>
+                    <div class="d-grid align-items-center">
+                      <div class="img"><img src="dist/images/video-author.png" alt=""></div>
+                      <div class="text">
+                        <div class="row">
+                          <div class="col-md-8 col-sm-6 mb-2 mb-sm-0"><a class="title" href="#">Ali TUFAN</a></div>
+                          <div class="col-md-4 col-sm-6 mb-2 mb-sm-0 text-sm-right">
+                            <div class="date">
+                               <i class="far fa-calendar-alt mr-2"></i>Jan 16, 2019 07:48 am</div>
+                          </div>
+                          <div class="col-12 mt-2"> 
+                            <p class="m-0">Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. </p>
+                          </div>
+                          <div class="col-12 mt-3"><span class="d-inline-block __reply commnet-button">
+                               <i class="far fa-angle-up mr-2"></i>Reply</span><span class="d-inline-block __up commnet-button">
+                              <i class="fas fa-thumbs-up mr-1"></i>(3)  </span><span class="d-inline-block __down commnet-button">
+                              <i class="fas fa-thumbs-down mr-1"></i>(8)  </span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <div class="d-grid align-items-center">
+                          <div class="img"><img src="dist/images/video-author.png" alt=""></div>
+                          <div class="text">
+                            <div class="row">
+                              <div class="col-md-8 col-sm-6 mb-2 mb-sm-0"><a class="title" href="#">Ali TUFAN</a></div>
+                              <div class="col-md-4 col-sm-6 mb-2 mb-sm-0 text-sm-right">
+                                <div class="date">
+                                   <i class="far fa-calendar-alt mr-2"></i>Jan 16, 2019 07:48 am</div>
+                              </div>
+                              <div class="col-12 mt-2"> 
+                                <p class="m-0">Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. </p>
+                              </div>
+                              <div class="col-12 mt-3"><span class="d-inline-block __reply commnet-button">
+                                   <i class="far fa-angle-up mr-2"></i>Reply</span><span class="d-inline-block __up commnet-button">
+                                  <i class="fas fa-thumbs-up mr-1"></i>(3)  </span><span class="d-inline-block __down commnet-button">
+                                  <i class="fas fa-thumbs-down mr-1"></i>(8)  </span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="d-grid align-items-center">
+                      <div class="img"><img src="dist/images/video-author.png" alt=""></div>
+                      <div class="text">
+                        <div class="row">
+                          <div class="col-md-8 col-sm-6 mb-2 mb-sm-0"><a class="title" href="#">Ali TUFAN</a></div>
+                          <div class="col-md-4 col-sm-6 mb-2 mb-sm-0 text-sm-right">
+                            <div class="date">
+                               <i class="far fa-calendar-alt mr-2"></i>Jan 16, 2019 07:48 am</div>
+                          </div>
+                          <div class="col-12 mt-2"> 
+                            <p class="m-0">Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement tantaneously eel valiantly petted this along across highhandedly much. </p>
+                          </div>
+                          <div class="col-12 mt-3"><span class="d-inline-block __reply commnet-button">
+                               <i class="far fa-angle-up mr-2"></i>Reply</span><span class="d-inline-block __up commnet-button">
+                              <i class="fas fa-thumbs-up mr-1"></i>(3)  </span><span class="d-inline-block __down commnet-button">
+                              <i class="fas fa-thumbs-down mr-1"></i>(8) </span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="mx-auto mt-5 mb-5" style="max-width: 194px;"><a class="button btn text-uppercase d-flex align-items-center justify-content-center" href="#">See more                      </a></div>
+                  </li>
+                  <li>
+                    <div class="d-grid align-items-center mb-0">
+                      <div class="img"><img src="dist/images/video-author.png" alt=""></div>
+                      <div class="textarea position-relative">
+                        <textarea placeholder="Here what I think..."></textarea>
+                        <div class="count">150/150</div>
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <button type="submit">Post Comment</button>
+                    </div>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- -------------Finish Post Comment design here------------- -->
+
+
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <div class="widget"><img class="mb-5" src="dist/images/logo-footer.png" alt="">
+              <p>Home of your Favorite Creators</p>
+              <div class="social-footer">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="widget widget-0">
+              <h3>RESOURCES</h3>
+              <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li> <a href="#">Cookie</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+          </div>
+          <div class="col-lg-3">
+          </div>
+        </div>
+        <div class="copyright-text">
+          <p>©NoFilter, LLC 2020</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="overlay-full" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="https://cdn.tiny.cloud/1/22qzrbthrfyzdzpg1aievca0trnc0wf87lydmvnxuj2314ea/tinymce/5/tinymce.min.js">
+  </script>
+  <script src="dist/scripts/main-dist.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
+  <script>
+    const player = new Plyr('#player');
+  </script>
+  <script src="dist/scripts/custom-dist.js" type="text/javascript"></script>
+  <script src="dist/scripts/extra.js" type="text/javascript"></script>
+</body>
+
+</html>
