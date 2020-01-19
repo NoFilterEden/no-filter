@@ -1869,6 +1869,32 @@
             $(".p3").toggleClass("phm-btn-active");
           });
         });
+        window.onclick = function(event) {
+          if (!event.target.matches('.b1,.b2,.b3')) {
+            var dropdowns = document.getElementsByClassName("p1");
+            var dropdowns1 = document.getElementsByClassName("p2");
+            var dropdowns2 = document.getElementsByClassName("p3");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('phm-btn-active')) {
+                openDropdown.classList.remove('phm-btn-active');
+              }
+            }
+            for (i = 0; i < dropdowns1.length; i++) {
+              var openDropdown = dropdowns1[i];
+              if (openDropdown.classList.contains('phm-btn-active')) {
+                openDropdown.classList.remove('phm-btn-active');
+              }
+            }
+            for (i = 0; i < dropdowns2.length; i++) {
+              var openDropdown = dropdowns2[i];
+              if (openDropdown.classList.contains('phm-btn-active')) {
+                openDropdown.classList.remove('phm-btn-active');
+              }
+            }
+          }
+        }
     </script>
    </body>
 </html>
