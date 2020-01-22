@@ -1,0 +1,197 @@
+body{
+    font-family: var(--Sans);
+}
+.cname {
+    position: relative;
+}
+
+.cname .c23 {
+    position: absolute;
+    bottom: -47px;
+    right: -26%;
+}
+
+.cname button {
+    background: white !important;
+    color: red;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50%;
+}
+
+.cname .c23 ul {
+    position: absolute;
+    top: 50px;
+    width: 130px;
+    background: #F58E8E;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 2;
+    display: none;
+    padding:5px 0;    
+    
+}
+
+.cname .c23 ul li {
+    padding: 0px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #F58E8E;
+}
+ h2 {
+    font-family: var(--Sans);
+    text-transform: inherit;
+}
+.chnl-btn{
+	background: #F68A8E;
+    color: white;
+    border: 1px solid #F68A8E;
+    padding: 10px 40px;
+    margin-top: 65px;
+}
+.chnl-btn2{
+    background: #4C88CB;
+    color: white;
+    border: 1px solid #4C88CB;
+    padding: 10px 33px;
+    margin-top: 15px;
+}
+
+.video-reaction{
+	margin-top: 30px;
+}
+.seemore{
+	margin-top: -55px;
+    margin-bottom: 90px;
+}
+.chnl-author-name{
+    color: #919191;
+    margin-left: -85px;
+    margin-top: 9px;
+}
+.chnl-icon{
+    margin-top: 9px;
+    color: #919191;
+}
+.chnl-date{
+    color: #F48B8F;
+    margin-top: 70px;
+}
+#cool-channels .singel-channel .subscrib {
+    position: relative;
+    color: #fff;
+    background-color: #F8898D;
+    padding: 9px 15px;
+    display: inline-block;
+    font-weight: bold;
+    /* text-decoration: none; */
+    border-radius: 4px;
+}
+#cool-channels .singel-channel .subscribing {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 8px 15px;
+    background-color: #F8898D;
+    z-index: 9;
+    border-radius: 4px;
+}
+#cool-channels .singel-channel .follow {
+    position: relative;
+    color: #fff;
+    background-color: #448CCB;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+#cool-channels .singel-channel .following {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 10px 30px 10px 25px;
+    background-color: #448CCB;
+    z-index: 9;
+    border-radius: 4px;
+}
+.chanel-follow-button, .chanel-subscrib-button {
+    margin: 10px 0px;
+    padding: 0;
+    text-align: center;
+}
+.fa-filter{
+color: #F68A8E;
+background-color: white;
+padding: 20px;
+border-radius: 50px;
+}
+.cname1 .c23 {
+position: absolute;
+bottom: -47px;
+right: -26%;
+}
+.creators{
+margin-top: 60px !important;
+}
+.post-top-menu-btn {
+color: #ffffff;
+cursor: pointer;
+}
+.post-header-menu {
+position: absolute;
+top: 70px;
+right: -58px;
+padding: 17px 10px 8px 10px;
+background: #f8898d;
+border-radius: 10px;
+display: none;
+z-index: 777;
+width: 170px;
+}
+.post-header-menu ul {
+list-style: none;
+padding: 0 15px 0 10px;
+margin: 0;
+}
+.post-header-menu ul li {
+text-align: left;
+padding: 0 0 10px 0;
+}
+.post-header-menu ul li a {
+display: inline-block;
+padding: 5px 0;
+width: 100%;
+font-size: 17px;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 400;
+color: #ffffff;
+text-decoration: none;
+}
+.phm-btn-active {
+display: block !important;
+}
+.post-header-menu::before {
+content: '';
+position: absolute;
+top: -6px;
+right: 70px;
+z-index: 998;
+border-left: 30px solid #f8898d;
+border-top: 30px solid rgba(0, 0, 0, 0);
+-webkit-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+.fa, .fab, .fad, .fal, .far, .fas{
+    display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+    .offset-1{
+        margin-left: 0px !important;
+    }
+    .chnl-author-name{
+        margin-left: 0px;
+    }
+}
