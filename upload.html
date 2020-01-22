@@ -8,7 +8,7 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords,here">
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <title>Category & tags</title>
+    <title>Image or Video Upload</title>
     <!-- Bootstrap-->
     <!--link(href='dist/fonts/fontawesome/css/all.css' rel='stylesheet')--><link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
     <link href="dist/styles/style.css" rel="stylesheet">
@@ -75,49 +75,65 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h3 class="aside-heading">Video upload Panel</h3>
+              <h3 class="aside-heading">Image or Video upload Panel</h3>
             </div>
           </div>
           <div class="row">
-                  <div class="col-lg-4 col-md-5 mb-md-0 mb-4">
-                    <aside class="h-100">
-                      <nav class="aside-menu h-100 b-shadow"> 
-                        <ul class="p-0 m-0 list-unstyled">
-                          <li class="d-flex align-items-center active"><a class="text-nowrap" href="video-upload.html">Upload video</a></li>
-                          <li class="d-flex align-items-center"><a class="text-nowrap" href="editor.html">Title & Description</a></li>
-                          <li class="d-flex align-items-center"><a class="text-nowrap" href="thumbnail.html">Thumbnail Setup</a></li>
-                          <li class="d-flex align-items-center"><a class="text-nowrap" href="tags.html">Category & tags</a></li>
-                          <li class="d-flex align-items-center"><a class="text-nowrap" href="ads.html">Advertisement</a></li>
-                          <li class="d-flex align-items-center"><a class="text-nowrap" href="extra.html">Extras    </a></li>
-                        </ul>
-                      </nav>
-                    </aside>
-                  </div>
+            <div class="col-lg-4 col-md-5 mb-md-0 mb-4">
+              <aside class="h-100">
+                <nav class="aside-menu h-100 b-shadow"> 
+                  <ul class="p-0 m-0 list-unstyled">
+                    <li class="d-flex align-items-center"><a class="text-nowrap" href="create-poll.html">Create a poll</a></li>
+                    <li class="d-flex align-items-center"><a class="text-nowrap" href="editor.html">Title & Description</a></li>
+                    <li class="d-flex align-items-center active"><a class="text-nowrap" href="thumbnail.html">Add images or video</a></li>
+                    <li class="d-flex align-items-center"><a class="text-nowrap" href="extra.html">Extras    </a></li>
+                  </ul>
+                </nav>
+              </aside>
+            </div>
             <div class="col-lg-8 col-md-7">
-              <div class="tags">
-                <form action="#">
-                  <h3 class="aside-heading small">Select Video categories</h3>
-                  <select class="chosen-select" data-placeholder="Select Video categories" tabindex="7" multiple="3">
-                    <option>Film & Animation</option>
-                    <option>Automotive</option>
-                    <option>Music</option>
-                    <option>Animals</option>
-                    <option>Sports</option>
-                    <option>Travel & Events</option>
-                    <option>Gaming</option>
-                    <option>Blogs & People</option>
-                    <option>Comedy</option>
-                    <option>Entertainment</option>
-                    <option>News & Politics</option>
-                    <option>Tutorials</option>
-                    <option>Education</option>
-                    <option>Science & Technology</option>
-                  </select>
-                  <h3 class="aside-heading small mt-5">Select Video tags</h3>
-                  <input type="text" value="Amsterdam,Washington" data-role="tagsinput">
-                </form>
+              <div class="row mb-5">
+                <div class="col-md-6">
+                  <div class="aside-heading">Upload image</div>
+                  <div class="video-upload position-relative b-shadow"> 
+                    <form action="#">
+                      <div class="upload">
+                        <label class="d-flex flex-column justify-content-center align-items-center" style="min-height: 159px;" for="upload">
+                          <input id="upload" type="file" name=""><i class="fas fa-cloud-upload-alt"></i>
+                          <p class="mb-0">Drag and Drop</p>
+                        </label>
+                      </div>
+                    </form>
+                </div>
+                </div>
+                <div class="col-md-6">
+                  <form action="#">
+                    <div class="upload">
+                      <label class="d-flex flex-column justify-content-center align-items-center" style="min-height: 159px;" for="upload">
+                        <input id="upload" type="file" name="">
+                        <a href="#" class="btn"></a>
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p class="mb-0">Drag and Drop</p>
+                      </label>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="navigation"><a class="text-decoration-none" href="#">Prev</a><a class="text-decoration-none" href="#">NEXT   </a></div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="aside-heading">Upload Video</div>
+                  <div class="video-upload position-relative b-shadow"> 
+                    <form action="#">
+                      <div class="upload">
+                        <label class="d-flex flex-column justify-content-center align-items-center" for="upload">
+                          <input id="upload" type="file" name=""><i class="fas fa-cloud-upload-alt"></i>
+                          <p class="mb-0">Drag and Drop</p>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
