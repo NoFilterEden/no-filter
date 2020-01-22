@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build Pro/Home</title>
+    <link href="images/9.png" rel="shortcut icon" type="image/png">
+    <!-- css link -->
+    <!-- Bootstrap-->
+    <!--link(href='dist/fonts/fontawesome/css/all.css' rel='stylesheet')-->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+    
+    <!--if lt IE 9-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <!-- video popup -->
+    <link rel="stylesheet" href="css/video.popup.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- responsive css -->
+    <link href="css/responsive.css" rel="stylesheet">
+    <style>
+        @import 'https://code.highcharts.com/css/highcharts.css';
+
+
+        .canvasjs-chart-toolbar button,
+        .canvasjs-chart-toolbar,
+        .canvasjs-chart-credit {
+            display: none;
+        }
+
+    </style>
+    <link href="dist/styles/style.css" rel="stylesheet">
+    <style>
+        .blog .title h6{
+            display: inline-block;
+        }
+        .post-top-menu-btn {
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .post-header-menu {
+            position: absolute;
+            top: 55px;
+            right: -55px;
+            padding: 30px 25px;
+            background: #f8898d;
+            border-radius: 10px;
+            display: none;
+            z-index: 777;
+        }
+        .post-header-menu ul {
+            list-style: none;
+            padding: 0 15px 0 10px;
+            margin: 0;
+        }
+        .post-header-menu ul li {
+            text-align: left;
+            padding: 0 0 10px 0;
+        }
+        .post-header-menu ul li a {
+            display: inline-block;
+            padding: 5px 0;
+            width: 100%;
+            font-size: 17px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .phm-btn-active {
+            display: block !important;
+        }
+        .post-header-menu::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            right: 44px;
+            z-index: 998;
+            border-left: 30px solid #f8898d;
+            border-top: 30px solid rgba(0, 0, 0, 0);
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header area -->
+    <header class="main-header bg-white logged-in">
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand-lg p-0 align-items-center"><a class="navbar-brand px-3" href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="dropdown search-tigger d-flex d-lg-none align-items-center mobile-serach-tigger justify-content-end">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <form class="d-flex" action="#">
+                            <input type="text" placeholder="Search Here">
+                        </form>
+                    </div>
+                    <button id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"> </i></button>
+                </div>
+                <div class="notification d-block d-lg-none ml-auto"><i class="fas fa-bell"> </i>
+                    <div class="number">2</div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="bar1 bar"></div>
+                    <div class="bar2 bar"></div>
+                    <div class="bar3 bar"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: none;">
+                    <div class="order-menu">
+                        <button class="close d-lg-none d-flex align-items-center justify-content-center" type="button" data-toggle="slide-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-times"></i></button>
+                        <ul class="navbar-nav ml-lg-auto toggle-nav-bar">
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Home </a></li>
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Rising</a></li>
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Feed
+                            </li>
+                            <li class="nav-item active"><a class="nav-link px-0" href="#">Updates
+                                </a></li>
+                            <li class="nav-item"><a class="nav-link px-0" href="#">Records </a></li>
+                        </ul>
+                        <div class="dropdown search-tigger d-none d-lg-flex align-items-center">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form class="d-flex" action="#">
+                                    <input type="text" placeholder="Search Here">
+                                </form>
+                            </div>
+                        </div>
+                        <button class="d-none d-lg-block" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"> </i></button>
+                        <div class="notification d-none d-lg-block"><i class="fas fa-bell"></i>
+
+                        </div>
+                        <ul class="menu-author navbar-nav order-1">
+                            <li class="nav-item dropdown bg-pink mr-0 d-flex flex-wrap align-items-center"><a class="profile-pic" href="#"><img src="images/cre.png" alt=""></a><a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="ml-2">David Richardson</span></a>
+                                <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown"><a class="dropdown-item active" href="#"><i class="far fa-user"></i>Profile</a><a class="dropdown-item" href="#"> <i class="fas fa-star"></i>Channel</a><a class="dropdown-item" href="#">
+                                        <i class="fas fa-sign-out-alt"></i>Sign Out</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- end header area -->
+
+
+    <section class="creators" style="margin-top: 105px;">
+        <div class="container-fluid no-pd">
+            <div class="banner">
+                <a href="#popup2"><button type="button" class="btn carera-banar"><i class="fas fa-camera"></i></button></a>
+                <img src="https://i.postimg.cc/bYK4czFX/banar.jpg" alt="image" class="brunch-img">
+                <div id="popup2" class="overlay">
+                    <div class="popup">
+                        <h2>Change Banner Image</h2>
+                        <a class="close" href="#">×</a>
+                        <p class="chose-pic"> <span>Upload Image <i class="fa fa-caret-right"></i></span><span class="file-name">banar-image.jpg</span></p>
+                        <div class="content">
+                            <img src="https://i.postimg.cc/DZNdGwb7/change-profile-copy.jpg" alt="">
+                        </div>
+                        <div class="conform-chose">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="CCChose" href="#">Set as Banner Photo</a><a class="CCCancel" href="#">Cancel</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="CCText"><a class="CCCI" href="">Choose File</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="creator-info user-details">
+        <div class="container">
+            <div class="info-top">
+                <div class="pro-pic">
+                    <img src="https://i.postimg.cc/cJsmyjSG/profile-defult.png" alt="">
+                    <div class="pic-change">
+                        <a href="#popup1"><button type="button" class="btn carera-profile"><i class="fas fa-camera"></i><span class="change-text">Update</span></button></a>
+                    </div>
+                </div>
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Change profile picture</h2>
+                        <a class="close" href="#">×</a>
+                        <p class="chose-pic"> <span>Upload Picture <i class="fa fa-caret-right"></i></span><span class="file-name">profile-pic.jpg</span></p>
+                        <div class="content">
+                            <img src="https://i.postimg.cc/DZNdGwb7/change-profile-copy.jpg" alt="">
+                        </div>
+                        <div class="conform-chose">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="CCChose" href="#">Set as Profile Photo</a><a class="CCCancel" href="#">Cancel</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="CCText"><a class="CCCI" href="">Choose File</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button><span><i class="fas fa-bell"></i></span> follow</button>
+                    <button style="background: #f88a8d;"><span><i class="fas fa-user-plus"></i></span> subscribe</button>
+                </div>
+            </div>
+            <div class="info-two">
+                <h3 class="creator-name">Sarah Wilson<img src="https://i.postimg.cc/qRqxg3qm/crown0.png" alt=""></h3>
+                <div class="extra-menu">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fa fa-download"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Progress-part">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="white-bg">
+                    <div class="mobile-progress">
+                      <div class="circle-img">
+                        <img src="https://i.postimg.cc/BQHkJddj/group.png" alt="">
+                      </div>
+                      <div class="mg-lf">
+                        <p class="bold">234,560</p>
+                        <p>SUBSCRIBER</p>
+                      </div>                        
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="white-bg">
+                    <div class="mobile-progress">
+                      <div class="circle-img">
+                        <img src="https://i.postimg.cc/k5fyncJ6/video-camera.png">
+                      </div>
+                      <div class="mg-lf">
+                        <p class="bold">120+</p>
+                        <p>VIDEOS</p>
+                      </div>
+                    </div>  
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="white-bg">
+                    <div class="mobile-progress">
+                      <div class="circle-img">
+                        <img src="https://i.postimg.cc/s1dYnHc8/follower.png">
+                      </div>
+                      <div class="mg-lf">
+                        <p class="bold">122,376+</p>
+                        <p>FOLLOWERS</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+    <section class="creator-video pb-0">
+       <div class="container">
+          <div class="videotabs">
+             <ul id="Tab" class="nav nav-tabs">
+                <li><a class="active" href="#summary" data-toggle="tab">Summary</a></li>
+                <li><a class="" href="#videos" data-toggle="tab">Videos</a></li>
+                <li><a class="" href="#exclusives" data-toggle="tab">Exclusives</a></li>
+                <li><a class="" href="#dashbord" data-toggle="tab">Dashboard</a></li>
+             </ul>
+             <div id="TabContent" class="tab-content">
+                
+             </div>
+          </div>
+       </div>
+    </section>
+
+
+    <section class="main-content mc1" style="padding-left: 0;margin-top: 0px;">
+        <div class="container">
+
+            <!-- blog -->
+            <div class="blog" style="padding: 0px;">
+                <!-- box -->
+                <div class="box">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="text">
+                                    <h6><span><i class="fas fa-edit"></i></span> post</h6>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="text text-right">
+                                    <h6 style="padding-right: 25px;"><span><i class="fas fa-calendar"></i></span> 12 feb 2020</h6>
+                                    <i class="fas fa-ellipsis-v post-top-menu-btn b1"></i>
+                                    <div class="post-header-menu p1">
+                                      <ul>
+                                        <li><a href="#">Copy Link</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Share to...</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                      </ul>
+                                    </div>
+                                    <!-- <ul class="dots12">
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                                            <ul class="drop">
+                                                <li><a href="#">DropDown</a></li>
+                                                <li><a href="#">DropDown</a></li>
+                                                <li><a href="#">DropDown</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="image">
+                                    <img src="images/16.JPG" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet assumenda praesentium ipsam corrupti cum quae delectus magni. Excepturi illum minus nam repellendus sit vero suscipit dicta quos. Quasi, explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet assumenda praesentium ipsam corrupti cum quae delectus magni. Excepturi illum minus nam repellendus sit vero suscipit dicta quos. Quasi, explicabo.</p>
+                                    <div class="pw">
+                                        <img src="images/cre.png" alt="">
+                                        <h6>devid</h6>
+                                        <ul>
+                                            <li><span><i class="fas fa-comment"></i></span> 12</li>
+                                            <li><span class="like"><i class="fas fa-thumbs-up"></i></span> 120</li>
+                                            <li><span class="dislike"><i class="fas fa-thumbs-down"></i></span> 21</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end box -->
+                <!-- box -->
+                <div class="box">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="text">
+                                    <h6><span><i class="fas fa-clipboard"></i></span> poll</h6>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="text text-right">
+                                    <h6 style="padding-right: 25px;"><span><i class="fas fa-calendar"></i></span> 12 feb 2020</h6>
+                                    <i class="fas fa-ellipsis-v post-top-menu-btn b2"></i>
+                                    <div class="post-header-menu p2">
+                                      <ul>
+                                        <li><a href="#">Copy Link</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Share to...</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="text">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet assumenda praesentium ipsam corrupti cum quae delectus magni. Excepturi illum minus nam repellendus sit vero suscipit dicta quos. Quasi, explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet assumenda praesentium ipsam corrupti cum quae delectus magni. Excepturi illum minus nam repellendus sit vero suscipit dicta quos. Quasi, explicabo.</p>
+                                    <div class="pw">
+                                        <img src="images/cre.png" alt="">
+                                        <h6>devid</h6>
+                                        <ul>
+                                            <li><span><i class="fas fa-comment"></i></span> 12</li>
+                                            <li><span class="like"><i class="fas fa-thumbs-up"></i></span> 120</li>
+                                            <li><span class="dislike"><i class="fas fa-thumbs-down"></i></span> 21</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="image text">
+                                    <form action="">
+                                       <h6>Which one is your favourite color?</h6>
+                                       <div class="input"> Male<br></div>
+                                       <div class="input">Female<br></div>
+                                       <div class="input">Other <br></div>
+                                       <div class="input">Lorem ipsum dolor sit amet.</div>
+                                       
+                                        <div class="votes">
+                                            <ul>
+                                                <li>73 Votes</li>
+                                                <li>&#46;</li>
+                                                <li>23 hours left</li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end box -->
+                <!-- box -->
+                <div class="box">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="text">
+                                    <h6><span><i class="fas fa-gift"></i></span> giveway</h6>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="text text-right">
+                                    <h6 style="padding-right: 25px;"><span><i class="fas fa-calendar"></i></span> 12 feb 2020</h6>
+                                    <i class="fas fa-ellipsis-v post-top-menu-btn b3"></i>
+                                    <div class="post-header-menu p3">
+                                      <ul>
+                                        <li><a href="#">Copy Link</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Share to...</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="count-days">
+                        <div id="countdown" class="timer"></div>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="image">
+                                    <img src="images/16.JPG" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text">
+                                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet assumenda praesentium ipsam corrupti cum quae delectus magni. Excepturi illum minus nam repellendus sit vero suscipit dicta quos. Quasi, explicabo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta amet assumenda praesentium ipsam corrupti cum quae delectus magni. Excepturi illum minus nam repellendus sit vero suscipit dicta quos. Quasi, explicabo.</p>
+                                    <div class="pw">
+                                        <img src="images/cre.png" alt="">
+                                        <h6>devid</h6>
+                                        <ul>
+                                            <li><span><i class="fas fa-comment"></i></span> 12</li>
+                                            <li><span class="like"><i class="fas fa-thumbs-up"></i></span> 120</li>
+                                            <li><span class="dislike"><i class="fas fa-thumbs-down"></i></span> 21</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end box -->
+                <div class="butto text-center">
+                    <button>see more</button>
+                </div>
+            </div>
+            <!-- end blog -->
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- foooter -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="widget"><img class="mb-5" src="images/logo-footer.png" alt="">
+                        <p>Home of your Favorite Creators</p>
+                        <div class="social-footer"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="widget widget-0">
+                        <h3>RESOURSES</h3>
+                        <ul>
+                            <li><a href="#">Terms </a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li> <a href="#">Cookie</a></li>
+                            <li> <a href="#">Copyright</a></li>
+                            <li><a href="#">Contact Us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <h6>&copy; NoFiter, LLC 2020</h6>
+            </div>
+        </div>
+    </footer>
+    <!-- end foooter -->
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- js link -->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/22qzrbthrfyzdzpg1aievca0trnc0wf87lydmvnxuj2314ea/tinymce/5/tinymce.min.js"></script>
+    <script src="dist/scripts/main-dist.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
+    <script>
+        const player = new Plyr('#player');
+
+    </script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="dist/scripts/custom-dist.js" type="text/javascript"></script>
+    <!-- jquery ui -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.highcharts.com/js/highcharts.js"></script>
+    <script src="https://code.highcharts.com/js/modules/exporting.js"></script>
+    <!-- font awesome -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/fontawesome.js"></script>
+    <script src="js/count-down.js"></script>
+    <!-- video popup -->
+    <script src="js/video.popup.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+
+            var options = {
+                exportEnabled: true,
+                animationEnabled: true,
+                title: false,
+                legend: false,
+                data: [{
+                    type: "pie",
+                    showInLegend: false,
+                    toolTipContent: "<b>{name}</b>: ${y} (#percent%)",
+                    indexLabel: "{name}",
+                    legendText: "{name} (#percent%)",
+                    indexLabelPlacement: "inside",
+                    dataPoints: [{
+                            y: 6566.4,
+                            name: "60%"
+                        },
+                        {
+                            y: 2599.2,
+                            name: "20%"
+                        },
+                        {
+                            y: 1231.2,
+                            name: "10%"
+                        },
+                        {
+                            y: 1368,
+                            name: "10%"
+                        },
+
+                    ]
+                }]
+            };
+            $("#chartContainer").CanvasJSChart(options);
+
+        }
+
+    </script>
+    <script>
+        $(document).ready(function(){
+          $(".b1").click(function(){
+            $(".p1").toggleClass("phm-btn-active");
+          });
+        });
+        $(document).ready(function(){
+          $(".b2").click(function(){
+            $(".p2").toggleClass("phm-btn-active");
+          });
+        });
+        $(document).ready(function(){
+          $(".b3").click(function(){
+            $(".p3").toggleClass("phm-btn-active");
+          });
+        });
+    </script>
+</body>
+
+</html>
