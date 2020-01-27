@@ -57,7 +57,9 @@ body{
     padding: 10px 33px;
     margin-top: 15px;
 }
-
+.chnl-btn:hover,.chnl-btn2:hover{
+    background: #ef3e33;
+}
 .video-reaction{
 	margin-top: 30px;
 }
